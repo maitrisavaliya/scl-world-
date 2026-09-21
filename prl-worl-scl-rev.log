@@ -1,0 +1,1047 @@
+7.1s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s 3 0.00s - to python to disable frozen modules.
+7.1s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.7s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s 7 0.00s - to python to disable frozen modules.
+7.7s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.7s 9 Device: cuda
+16.7s 10 N_SEEDS=5, SEEDS=[42, 43, 44, 45, 46]
+16.7s 11 RUN_MULTISEED=True  RUN_KFOLD=True  kfold_n_splits=5
+16.8s 12 Loaded demographics for 20 patients.
+17.5s 13 Found 20 patients under /kaggle/input/datasets/farahmo/longitudinal-mri-data/Longitudinal MR_data
+17.5s 14 [split] stratification by 'ms_type' not viable -- falling back to plain random split.
+17.5s 15 [split] plain random split (no demographics-based stratification).
+17.5s 16 patients -> train 14 / val 3 / test 3
+147.1s 17 [SliceCache] loaded + precomputed 14 patient(s), 613 usable slice(s).
+176.3s 18 [SliceCache] loaded + precomputed 3 patient(s), 122 usable slice(s).
+203.1s 19 [SliceCache] loaded + precomputed 3 patient(s), 126 usable slice(s).
+203.1s 20 slices -> train 613 / val 122 / test 126
+203.5s 21 DirectUNetBaseline: 1,161,444 params
+204.1s 22 Estimated BCE pos_weight from training data: 100.00
+204.1s 23 
+204.1s 24 Training DirectUNetBaseline (primary split)...
+209.3s 25 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+209.3s 26 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+209.3s 27 
+209.3s 28 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+209.3s 29 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+214.0s 30 [DirectUNetBaseline] epoch 01/30  train_loss=1.3623  val_loss=1.2528  val_dice=0.0080  lr=3.00e-04 *
+215.6s 31 [DirectUNetBaseline] epoch 02/30  train_loss=1.1674  val_loss=1.2176  val_dice=0.0113  lr=2.99e-04 *
+217.2s 32 [DirectUNetBaseline] epoch 03/30  train_loss=1.1553  val_loss=1.2108  val_dice=0.0105  lr=2.97e-04
+218.9s 33 [DirectUNetBaseline] epoch 04/30  train_loss=1.1511  val_loss=1.1988  val_dice=0.0110  lr=2.93e-04
+220.5s 34 [DirectUNetBaseline] epoch 05/30  train_loss=1.1452  val_loss=1.2346  val_dice=0.0130  lr=2.87e-04 *
+222.1s 35 [DirectUNetBaseline] epoch 06/30  train_loss=1.1468  val_loss=1.2208  val_dice=0.0131  lr=2.80e-04 *
+223.7s 36 [DirectUNetBaseline] epoch 07/30  train_loss=1.1415  val_loss=1.2109  val_dice=0.0122  lr=2.72e-04
+225.3s 37 [DirectUNetBaseline] epoch 08/30  train_loss=1.1407  val_loss=1.2236  val_dice=0.0137  lr=2.62e-04 *
+226.9s 38 [DirectUNetBaseline] epoch 09/30  train_loss=1.1407  val_loss=1.1931  val_dice=0.0129  lr=2.51e-04
+228.6s 39 [DirectUNetBaseline] epoch 10/30  train_loss=1.1370  val_loss=1.2046  val_dice=0.0143  lr=2.39e-04 *
+230.2s 40 [DirectUNetBaseline] epoch 11/30  train_loss=1.1339  val_loss=1.1941  val_dice=0.0143  lr=2.26e-04
+231.8s 41 [DirectUNetBaseline] epoch 12/30  train_loss=1.1348  val_loss=1.1853  val_dice=0.0144  lr=2.12e-04 *
+233.5s 42 [DirectUNetBaseline] epoch 13/30  train_loss=1.1358  val_loss=1.2204  val_dice=0.0141  lr=1.97e-04
+235.1s 43 [DirectUNetBaseline] epoch 14/30  train_loss=1.1331  val_loss=1.2013  val_dice=0.0144  lr=1.82e-04
+236.7s 44 [DirectUNetBaseline] epoch 15/30  train_loss=1.1306  val_loss=1.1869  val_dice=0.0145  lr=1.67e-04 *
+238.3s 45 [DirectUNetBaseline] epoch 16/30  train_loss=1.1292  val_loss=1.1948  val_dice=0.0138  lr=1.51e-04
+240.0s 46 [DirectUNetBaseline] epoch 17/30  train_loss=1.1285  val_loss=1.1807  val_dice=0.0156  lr=1.36e-04 *
+241.7s 47 [DirectUNetBaseline] epoch 18/30  train_loss=1.1277  val_loss=1.1876  val_dice=0.0160  lr=1.21e-04 *
+243.3s 48 [DirectUNetBaseline] epoch 19/30  train_loss=1.1258  val_loss=1.1911  val_dice=0.0159  lr=1.06e-04
+245.0s 49 [DirectUNetBaseline] epoch 20/30  train_loss=1.1217  val_loss=1.1907  val_dice=0.0164  lr=9.11e-05 *
+246.6s 50 [DirectUNetBaseline] epoch 21/30  train_loss=1.1211  val_loss=1.1935  val_dice=0.0167  lr=7.73e-05 *
+248.3s 51 [DirectUNetBaseline] epoch 22/30  train_loss=1.1193  val_loss=1.1784  val_dice=0.0159  lr=6.42e-05
+249.9s 52 [DirectUNetBaseline] epoch 23/30  train_loss=1.1174  val_loss=1.1821  val_dice=0.0167  lr=5.21e-05
+251.6s 53 [DirectUNetBaseline] epoch 24/30  train_loss=1.1162  val_loss=1.1861  val_dice=0.0171  lr=4.11e-05 *
+253.2s 54 [DirectUNetBaseline] epoch 25/30  train_loss=1.1155  val_loss=1.1782  val_dice=0.0169  lr=3.14e-05
+254.9s 55 [DirectUNetBaseline] epoch 26/30  train_loss=1.1150  val_loss=1.1856  val_dice=0.0170  lr=2.29e-05
+256.6s 56 [DirectUNetBaseline] epoch 27/30  train_loss=1.1141  val_loss=1.1799  val_dice=0.0170  lr=1.58e-05
+258.2s 57 [DirectUNetBaseline] epoch 28/30  train_loss=1.1135  val_loss=1.1769  val_dice=0.0170  lr=1.03e-05
+259.9s 58 [DirectUNetBaseline] epoch 29/30  train_loss=1.1125  val_loss=1.1788  val_dice=0.0170  lr=6.25e-06
+261.4s 59 [DirectUNetBaseline] epoch 30/30  train_loss=1.1122  val_loss=1.1793  val_dice=0.0171  lr=3.81e-06 *
+262.3s 60 
+262.3s 61 Primary-split result (n=3 test patients):
+262.3s 62 n_patients  psnr_mean  psnr_std  ssim_mean  ssim_std  \
+262.3s 63 model
+262.3s 64 DirectUNetBaseline           3  27.045888  1.700068   0.880652  0.020396
+262.3s 65 
+262.3s 66 dice_mean  dice_std
+262.3s 67 model
+262.3s 68 DirectUNetBaseline   0.287674  0.186633
+262.3s 69 
+262.3s 70 ========== seed 42 ==========
+262.7s 71 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+262.7s 72 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+262.7s 73 
+262.7s 74 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+262.7s 75 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+264.5s 76 [seed42-DirectUNet] epoch 01/30  train_loss=1.3636  val_loss=1.2478  val_dice=0.0105  lr=3.00e-04 *
+266.3s 77 [seed42-DirectUNet] epoch 02/30  train_loss=1.1742  val_loss=1.2901  val_dice=0.0112  lr=2.99e-04 *
+268.1s 78 [seed42-DirectUNet] epoch 03/30  train_loss=1.1527  val_loss=1.2426  val_dice=0.0121  lr=2.97e-04 *
+269.9s 79 [seed42-DirectUNet] epoch 04/30  train_loss=1.1495  val_loss=1.1901  val_dice=0.0118  lr=2.93e-04
+271.7s 80 [seed42-DirectUNet] epoch 05/30  train_loss=1.1493  val_loss=1.1986  val_dice=0.0124  lr=2.87e-04 *
+273.5s 81 [seed42-DirectUNet] epoch 06/30  train_loss=1.1454  val_loss=1.2077  val_dice=0.0122  lr=2.80e-04
+275.3s 82 [seed42-DirectUNet] epoch 07/30  train_loss=1.1415  val_loss=1.1964  val_dice=0.0118  lr=2.72e-04
+277.1s 83 [seed42-DirectUNet] epoch 08/30  train_loss=1.1441  val_loss=1.1850  val_dice=0.0130  lr=2.62e-04 *
+278.9s 84 [seed42-DirectUNet] epoch 09/30  train_loss=1.1416  val_loss=1.2271  val_dice=0.0137  lr=2.51e-04 *
+280.8s 85 [seed42-DirectUNet] epoch 10/30  train_loss=1.1374  val_loss=1.2185  val_dice=0.0142  lr=2.39e-04 *
+282.6s 86 [seed42-DirectUNet] epoch 11/30  train_loss=1.1361  val_loss=1.2043  val_dice=0.0138  lr=2.26e-04
+284.4s 87 [seed42-DirectUNet] epoch 12/30  train_loss=1.1367  val_loss=1.2006  val_dice=0.0159  lr=2.12e-04 *
+286.2s 88 [seed42-DirectUNet] epoch 13/30  train_loss=1.1359  val_loss=1.1746  val_dice=0.0141  lr=1.97e-04
+288.1s 89 [seed42-DirectUNet] epoch 14/30  train_loss=1.1315  val_loss=1.1978  val_dice=0.0145  lr=1.82e-04
+289.9s 90 [seed42-DirectUNet] epoch 15/30  train_loss=1.1305  val_loss=1.2004  val_dice=0.0159  lr=1.67e-04 *
+291.8s 91 [seed42-DirectUNet] epoch 16/30  train_loss=1.1291  val_loss=1.2552  val_dice=0.0148  lr=1.51e-04
+293.6s 92 [seed42-DirectUNet] epoch 17/30  train_loss=1.1296  val_loss=1.1885  val_dice=0.0149  lr=1.36e-04
+295.5s 93 [seed42-DirectUNet] epoch 18/30  train_loss=1.1273  val_loss=1.1980  val_dice=0.0158  lr=1.21e-04
+297.3s 94 [seed42-DirectUNet] epoch 19/30  train_loss=1.1242  val_loss=1.1898  val_dice=0.0163  lr=1.06e-04 *
+299.1s 95 [seed42-DirectUNet] epoch 20/30  train_loss=1.1214  val_loss=1.1863  val_dice=0.0150  lr=9.11e-05
+301.0s 96 [seed42-DirectUNet] epoch 21/30  train_loss=1.1205  val_loss=1.1772  val_dice=0.0157  lr=7.73e-05
+302.8s 97 [seed42-DirectUNet] epoch 22/30  train_loss=1.1192  val_loss=1.1806  val_dice=0.0159  lr=6.42e-05
+304.7s 98 [seed42-DirectUNet] epoch 23/30  train_loss=1.1179  val_loss=1.1869  val_dice=0.0163  lr=5.21e-05 *
+306.5s 99 [seed42-DirectUNet] epoch 24/30  train_loss=1.1182  val_loss=1.1853  val_dice=0.0165  lr=4.11e-05 *
+308.4s 100 [seed42-DirectUNet] epoch 25/30  train_loss=1.1157  val_loss=1.1842  val_dice=0.0173  lr=3.14e-05 *
+310.3s 101 [seed42-DirectUNet] epoch 26/30  train_loss=1.1153  val_loss=1.1825  val_dice=0.0172  lr=2.29e-05
+312.2s 102 [seed42-DirectUNet] epoch 27/30  train_loss=1.1123  val_loss=1.1855  val_dice=0.0172  lr=1.58e-05
+314.1s 103 [seed42-DirectUNet] epoch 28/30  train_loss=1.1139  val_loss=1.1812  val_dice=0.0171  lr=1.03e-05
+316.0s 104 [seed42-DirectUNet] epoch 29/30  train_loss=1.1126  val_loss=1.1817  val_dice=0.0171  lr=6.25e-06
+318.0s 105 [seed42-DirectUNet] epoch 30/30  train_loss=1.1135  val_loss=1.1826  val_dice=0.0173  lr=3.81e-06
+318.5s 106 
+318.5s 107 ========== seed 43 ==========
+320.8s 108 [seed43-DirectUNet] epoch 01/30  train_loss=1.3601  val_loss=1.2581  val_dice=0.0079  lr=3.00e-04 *
+322.7s 109 [seed43-DirectUNet] epoch 02/30  train_loss=1.1695  val_loss=1.2039  val_dice=0.0108  lr=2.99e-04 *
+324.6s 110 [seed43-DirectUNet] epoch 03/30  train_loss=1.1561  val_loss=1.2305  val_dice=0.0111  lr=2.97e-04 *
+326.5s 111 [seed43-DirectUNet] epoch 04/30  train_loss=1.1473  val_loss=1.2022  val_dice=0.0119  lr=2.93e-04 *
+328.4s 112 [seed43-DirectUNet] epoch 05/30  train_loss=1.1509  val_loss=1.2011  val_dice=0.0127  lr=2.87e-04 *
+330.3s 113 [seed43-DirectUNet] epoch 06/30  train_loss=1.1428  val_loss=1.2030  val_dice=0.0128  lr=2.80e-04 *
+332.2s 114 [seed43-DirectUNet] epoch 07/30  train_loss=1.1414  val_loss=1.1951  val_dice=0.0127  lr=2.72e-04
+334.1s 115 [seed43-DirectUNet] epoch 08/30  train_loss=1.1435  val_loss=1.2045  val_dice=0.0130  lr=2.62e-04 *
+336.0s 116 [seed43-DirectUNet] epoch 09/30  train_loss=1.1427  val_loss=1.1781  val_dice=0.0127  lr=2.51e-04
+337.9s 117 [seed43-DirectUNet] epoch 10/30  train_loss=1.1377  val_loss=1.2001  val_dice=0.0132  lr=2.39e-04 *
+339.7s 118 [seed43-DirectUNet] epoch 11/30  train_loss=1.1336  val_loss=1.1870  val_dice=0.0132  lr=2.26e-04
+341.6s 119 [seed43-DirectUNet] epoch 12/30  train_loss=1.1368  val_loss=1.2283  val_dice=0.0141  lr=2.12e-04 *
+343.5s 120 [seed43-DirectUNet] epoch 13/30  train_loss=1.1357  val_loss=1.1954  val_dice=0.0148  lr=1.97e-04 *
+345.3s 121 [seed43-DirectUNet] epoch 14/30  train_loss=1.1337  val_loss=1.2024  val_dice=0.0140  lr=1.82e-04
+347.2s 122 [seed43-DirectUNet] epoch 15/30  train_loss=1.1292  val_loss=1.2210  val_dice=0.0157  lr=1.67e-04 *
+349.0s 123 [seed43-DirectUNet] epoch 16/30  train_loss=1.1283  val_loss=1.2079  val_dice=0.0153  lr=1.51e-04
+350.9s 124 [seed43-DirectUNet] epoch 17/30  train_loss=1.1282  val_loss=1.1717  val_dice=0.0155  lr=1.36e-04
+352.8s 125 [seed43-DirectUNet] epoch 18/30  train_loss=1.1247  val_loss=1.1829  val_dice=0.0162  lr=1.21e-04 *
+354.6s 126 [seed43-DirectUNet] epoch 19/30  train_loss=1.1211  val_loss=1.1772  val_dice=0.0155  lr=1.06e-04
+356.4s 127 [seed43-DirectUNet] epoch 20/30  train_loss=1.1225  val_loss=1.1828  val_dice=0.0156  lr=9.11e-05
+358.2s 128 [seed43-DirectUNet] epoch 21/30  train_loss=1.1215  val_loss=1.1856  val_dice=0.0166  lr=7.73e-05 *
+360.1s 129 [seed43-DirectUNet] epoch 22/30  train_loss=1.1198  val_loss=1.1767  val_dice=0.0164  lr=6.42e-05
+361.9s 130 [seed43-DirectUNet] epoch 23/30  train_loss=1.1179  val_loss=1.1779  val_dice=0.0175  lr=5.21e-05 *
+363.7s 131 [seed43-DirectUNet] epoch 24/30  train_loss=1.1155  val_loss=1.1745  val_dice=0.0169  lr=4.11e-05
+365.5s 132 [seed43-DirectUNet] epoch 25/30  train_loss=1.1149  val_loss=1.1816  val_dice=0.0173  lr=3.14e-05
+367.4s 133 [seed43-DirectUNet] epoch 26/30  train_loss=1.1128  val_loss=1.1774  val_dice=0.0172  lr=2.29e-05
+369.2s 134 [seed43-DirectUNet] epoch 27/30  train_loss=1.1130  val_loss=1.1780  val_dice=0.0176  lr=1.58e-05 *
+371.0s 135 [seed43-DirectUNet] epoch 28/30  train_loss=1.1132  val_loss=1.1760  val_dice=0.0178  lr=1.03e-05 *
+372.8s 136 [seed43-DirectUNet] epoch 29/30  train_loss=1.1092  val_loss=1.1768  val_dice=0.0178  lr=6.25e-06
+374.9s 137 [seed43-DirectUNet] epoch 30/30  train_loss=1.1111  val_loss=1.1740  val_dice=0.0178  lr=3.81e-06 *
+375.3s 138 
+375.3s 139 ========== seed 44 ==========
+377.6s 140 [seed44-DirectUNet] epoch 01/30  train_loss=1.3566  val_loss=1.2510  val_dice=0.0094  lr=3.00e-04 *
+379.4s 141 [seed44-DirectUNet] epoch 02/30  train_loss=1.1676  val_loss=1.2381  val_dice=0.0112  lr=2.99e-04 *
+381.3s 142 [seed44-DirectUNet] epoch 03/30  train_loss=1.1519  val_loss=1.1960  val_dice=0.0110  lr=2.97e-04
+383.1s 143 [seed44-DirectUNet] epoch 04/30  train_loss=1.1517  val_loss=1.2067  val_dice=0.0116  lr=2.93e-04 *
+385.0s 144 [seed44-DirectUNet] epoch 05/30  train_loss=1.1497  val_loss=1.2101  val_dice=0.0116  lr=2.87e-04 *
+386.8s 145 [seed44-DirectUNet] epoch 06/30  train_loss=1.1457  val_loss=1.1943  val_dice=0.0133  lr=2.80e-04 *
+388.6s 146 [seed44-DirectUNet] epoch 07/30  train_loss=1.1425  val_loss=1.2030  val_dice=0.0128  lr=2.72e-04
+390.5s 147 [seed44-DirectUNet] epoch 08/30  train_loss=1.1404  val_loss=1.1943  val_dice=0.0127  lr=2.62e-04
+392.3s 148 [seed44-DirectUNet] epoch 09/30  train_loss=1.1416  val_loss=1.1964  val_dice=0.0127  lr=2.51e-04
+394.2s 149 [seed44-DirectUNet] epoch 10/30  train_loss=1.1390  val_loss=1.2127  val_dice=0.0145  lr=2.39e-04 *
+396.1s 150 [seed44-DirectUNet] epoch 11/30  train_loss=1.1350  val_loss=1.1913  val_dice=0.0133  lr=2.26e-04
+397.9s 151 [seed44-DirectUNet] epoch 12/30  train_loss=1.1351  val_loss=1.2026  val_dice=0.0151  lr=2.12e-04 *
+399.8s 152 [seed44-DirectUNet] epoch 13/30  train_loss=1.1338  val_loss=1.1795  val_dice=0.0136  lr=1.97e-04
+401.6s 153 [seed44-DirectUNet] epoch 14/30  train_loss=1.1301  val_loss=1.1831  val_dice=0.0141  lr=1.82e-04
+403.5s 154 [seed44-DirectUNet] epoch 15/30  train_loss=1.1301  val_loss=1.1866  val_dice=0.0147  lr=1.67e-04
+405.4s 155 [seed44-DirectUNet] epoch 16/30  train_loss=1.1307  val_loss=1.1847  val_dice=0.0151  lr=1.51e-04 *
+407.2s 156 [seed44-DirectUNet] epoch 17/30  train_loss=1.1274  val_loss=1.2153  val_dice=0.0142  lr=1.36e-04
+409.1s 157 [seed44-DirectUNet] epoch 18/30  train_loss=1.1270  val_loss=1.1876  val_dice=0.0153  lr=1.21e-04 *
+410.9s 158 [seed44-DirectUNet] epoch 19/30  train_loss=1.1241  val_loss=1.1728  val_dice=0.0165  lr=1.06e-04 *
+412.8s 159 [seed44-DirectUNet] epoch 20/30  train_loss=1.1242  val_loss=1.1740  val_dice=0.0154  lr=9.11e-05
+414.7s 160 [seed44-DirectUNet] epoch 21/30  train_loss=1.1214  val_loss=1.1848  val_dice=0.0157  lr=7.73e-05
+416.5s 161 [seed44-DirectUNet] epoch 22/30  train_loss=1.1189  val_loss=1.1948  val_dice=0.0156  lr=6.42e-05
+418.4s 162 [seed44-DirectUNet] epoch 23/30  train_loss=1.1168  val_loss=1.1818  val_dice=0.0169  lr=5.21e-05 *
+420.3s 163 [seed44-DirectUNet] epoch 24/30  train_loss=1.1167  val_loss=1.1740  val_dice=0.0162  lr=4.11e-05
+422.1s 164 [seed44-DirectUNet] epoch 25/30  train_loss=1.1151  val_loss=1.1857  val_dice=0.0167  lr=3.14e-05
+424.0s 165 [seed44-DirectUNet] epoch 26/30  train_loss=1.1123  val_loss=1.1808  val_dice=0.0170  lr=2.29e-05 *
+425.8s 166 [seed44-DirectUNet] epoch 27/30  train_loss=1.1122  val_loss=1.1798  val_dice=0.0168  lr=1.58e-05
+427.7s 167 [seed44-DirectUNet] epoch 28/30  train_loss=1.1137  val_loss=1.1820  val_dice=0.0172  lr=1.03e-05 *
+429.5s 168 [seed44-DirectUNet] epoch 29/30  train_loss=1.1101  val_loss=1.1819  val_dice=0.0173  lr=6.25e-06 *
+431.6s 169 [seed44-DirectUNet] epoch 30/30  train_loss=1.1090  val_loss=1.1809  val_dice=0.0173  lr=3.81e-06 *
+432.0s 170 
+432.0s 171 ========== seed 45 ==========
+434.4s 172 [seed45-DirectUNet] epoch 01/30  train_loss=1.3794  val_loss=1.2603  val_dice=0.0092  lr=3.00e-04 *
+436.3s 173 [seed45-DirectUNet] epoch 02/30  train_loss=1.1757  val_loss=1.2279  val_dice=0.0116  lr=2.99e-04 *
+438.1s 174 [seed45-DirectUNet] epoch 03/30  train_loss=1.1576  val_loss=1.2271  val_dice=0.0115  lr=2.97e-04
+440.0s 175 [seed45-DirectUNet] epoch 04/30  train_loss=1.1523  val_loss=1.2233  val_dice=0.0120  lr=2.93e-04 *
+441.9s 176 [seed45-DirectUNet] epoch 05/30  train_loss=1.1474  val_loss=1.2034  val_dice=0.0129  lr=2.87e-04 *
+443.7s 177 [seed45-DirectUNet] epoch 06/30  train_loss=1.1433  val_loss=1.2152  val_dice=0.0139  lr=2.80e-04 *
+445.6s 178 [seed45-DirectUNet] epoch 07/30  train_loss=1.1475  val_loss=1.1952  val_dice=0.0124  lr=2.72e-04
+447.4s 179 [seed45-DirectUNet] epoch 08/30  train_loss=1.1406  val_loss=1.1828  val_dice=0.0132  lr=2.62e-04
+449.3s 180 [seed45-DirectUNet] epoch 09/30  train_loss=1.1428  val_loss=1.2308  val_dice=0.0127  lr=2.51e-04
+451.1s 181 [seed45-DirectUNet] epoch 10/30  train_loss=1.1383  val_loss=1.1940  val_dice=0.0129  lr=2.39e-04
+453.0s 182 [seed45-DirectUNet] epoch 11/30  train_loss=1.1366  val_loss=1.1807  val_dice=0.0134  lr=2.26e-04
+455.0s 183 [seed45-DirectUNet] epoch 12/30  train_loss=1.1333  val_loss=1.1957  val_dice=0.0139  lr=2.12e-04
+455.0s 184 [seed45-DirectUNet] early stopping at epoch 12 (no improvement for 6 epochs; best was epoch 6)
+455.5s 185 
+455.5s 186 ========== seed 46 ==========
+457.7s 187 [seed46-DirectUNet] epoch 01/30  train_loss=1.3535  val_loss=1.2385  val_dice=0.0086  lr=3.00e-04 *
+459.6s 188 [seed46-DirectUNet] epoch 02/30  train_loss=1.1652  val_loss=1.2006  val_dice=0.0108  lr=2.99e-04 *
+461.4s 189 [seed46-DirectUNet] epoch 03/30  train_loss=1.1524  val_loss=1.2503  val_dice=0.0118  lr=2.97e-04 *
+463.3s 190 [seed46-DirectUNet] epoch 04/30  train_loss=1.1497  val_loss=1.2056  val_dice=0.0121  lr=2.93e-04 *
+465.1s 191 [seed46-DirectUNet] epoch 05/30  train_loss=1.1503  val_loss=1.2544  val_dice=0.0132  lr=2.87e-04 *
+466.9s 192 [seed46-DirectUNet] epoch 06/30  train_loss=1.1424  val_loss=1.2020  val_dice=0.0132  lr=2.80e-04
+468.8s 193 [seed46-DirectUNet] epoch 07/30  train_loss=1.1425  val_loss=1.2178  val_dice=0.0131  lr=2.72e-04
+470.6s 194 [seed46-DirectUNet] epoch 08/30  train_loss=1.1413  val_loss=1.1838  val_dice=0.0132  lr=2.62e-04
+472.5s 195 [seed46-DirectUNet] epoch 09/30  train_loss=1.1415  val_loss=1.1892  val_dice=0.0132  lr=2.51e-04
+474.4s 196 [seed46-DirectUNet] epoch 10/30  train_loss=1.1426  val_loss=1.1851  val_dice=0.0125  lr=2.39e-04
+476.2s 197 [seed46-DirectUNet] epoch 11/30  train_loss=1.1378  val_loss=1.1953  val_dice=0.0147  lr=2.26e-04 *
+478.1s 198 [seed46-DirectUNet] epoch 12/30  train_loss=1.1360  val_loss=1.1853  val_dice=0.0134  lr=2.12e-04
+479.9s 199 [seed46-DirectUNet] epoch 13/30  train_loss=1.1340  val_loss=1.1971  val_dice=0.0133  lr=1.97e-04
+481.8s 200 [seed46-DirectUNet] epoch 14/30  train_loss=1.1318  val_loss=1.1950  val_dice=0.0150  lr=1.82e-04 *
+483.6s 201 [seed46-DirectUNet] epoch 15/30  train_loss=1.1300  val_loss=1.1862  val_dice=0.0136  lr=1.67e-04
+485.5s 202 [seed46-DirectUNet] epoch 16/30  train_loss=1.1284  val_loss=1.1879  val_dice=0.0147  lr=1.51e-04
+487.3s 203 [seed46-DirectUNet] epoch 17/30  train_loss=1.1295  val_loss=1.1995  val_dice=0.0141  lr=1.36e-04
+489.2s 204 [seed46-DirectUNet] epoch 18/30  train_loss=1.1238  val_loss=1.1778  val_dice=0.0142  lr=1.21e-04
+491.0s 205 [seed46-DirectUNet] epoch 19/30  train_loss=1.1249  val_loss=1.2057  val_dice=0.0157  lr=1.06e-04 *
+492.9s 206 [seed46-DirectUNet] epoch 20/30  train_loss=1.1228  val_loss=1.1789  val_dice=0.0158  lr=9.11e-05 *
+494.8s 207 [seed46-DirectUNet] epoch 21/30  train_loss=1.1229  val_loss=1.1829  val_dice=0.0162  lr=7.73e-05 *
+496.6s 208 [seed46-DirectUNet] epoch 22/30  train_loss=1.1211  val_loss=1.1826  val_dice=0.0162  lr=6.42e-05 *
+498.5s 209 [seed46-DirectUNet] epoch 23/30  train_loss=1.1179  val_loss=1.1802  val_dice=0.0159  lr=5.21e-05
+500.4s 210 [seed46-DirectUNet] epoch 24/30  train_loss=1.1181  val_loss=1.1915  val_dice=0.0162  lr=4.11e-05 *
+502.2s 211 [seed46-DirectUNet] epoch 25/30  train_loss=1.1154  val_loss=1.1918  val_dice=0.0165  lr=3.14e-05 *
+504.1s 212 [seed46-DirectUNet] epoch 26/30  train_loss=1.1142  val_loss=1.1812  val_dice=0.0165  lr=2.29e-05 *
+506.0s 213 [seed46-DirectUNet] epoch 27/30  train_loss=1.1175  val_loss=1.1831  val_dice=0.0167  lr=1.58e-05 *
+507.8s 214 [seed46-DirectUNet] epoch 28/30  train_loss=1.1155  val_loss=1.1843  val_dice=0.0167  lr=1.03e-05
+509.7s 215 [seed46-DirectUNet] epoch 29/30  train_loss=1.1142  val_loss=1.1839  val_dice=0.0167  lr=6.25e-06 *
+511.8s 216 [seed46-DirectUNet] epoch 30/30  train_loss=1.1156  val_loss=1.1852  val_dice=0.0169  lr=3.81e-06 *
+512.2s 217 
+512.2s 218 Per-seed patient-weighted results:
+512.2s 219 model  seed  psnr_mean  ssim_mean  dice_mean
+512.2s 220 0  DirectUNetBaseline    42  27.065567   0.810539   0.257239
+512.2s 221 1  DirectUNetBaseline    43  26.851765   0.883061   0.276747
+512.2s 222 2  DirectUNetBaseline    44  26.672255   0.861118   0.268361
+512.2s 223 3  DirectUNetBaseline    45  23.991581   0.585996   0.233790
+512.2s 224 4  DirectUNetBaseline    46  26.685312   0.874392   0.258102
+512.2s 225 
+512.2s 226 Across-seed summary (n=5 seeds, mean +/- std, patient-level PRIMARY metric):
+512.2s 227 psnr_mean           ssim_mean           dice_mean  \
+512.2s 228 mean       std      mean       std      mean
+512.2s 229 model
+512.2s 230 DirectUNetBaseline  26.253296  1.274311  0.803021  0.124531  0.258848
+512.2s 231 
+512.2s 232 
+512.2s 233 std
+512.2s 234 model
+512.2s 235 DirectUNetBaseline  0.016139
+512.4s 236 [kfold-direct] using plain KFold (k=5, no stratification).
+512.4s 237 [kfold-direct] training under 5 seed(s) per fold: [42, 43, 44, 45, 46]  (5 folds x 5 seeds = 25 runs for DirectUNetBaseline)
+512.4s 238 
+512.4s 239 [kfold-direct] fold 1/5: loading 16 train/val + 4 test patient(s) into cache...
+621.7s 240 [SliceCache] loaded + precomputed 16 patient(s), 691 usable slice(s).
+643.4s 241 [SliceCache] loaded + precomputed 4 patient(s), 170 usable slice(s).
+643.4s 242 
+643.4s 243 ===== Fold 1/5  |  seed 42 (1/5) =====
+644.0s 244 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+644.0s 245 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+644.0s 246 
+644.0s 247 /tmp/ipykernel_24/3959916865.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+644.0s 248 scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+645.9s 249 [fold1-seed42-DirectUNet] epoch 01/30  train_loss=1.3572  val_loss=1.2862  val_dice=0.0062  lr=3.00e-04 *
+647.5s 250 [fold1-seed42-DirectUNet] epoch 02/30  train_loss=1.1745  val_loss=1.1887  val_dice=0.0098  lr=2.99e-04 *
+649.2s 251 [fold1-seed42-DirectUNet] epoch 03/30  train_loss=1.1609  val_loss=1.1856  val_dice=0.0093  lr=2.97e-04
+650.8s 252 [fold1-seed42-DirectUNet] epoch 04/30  train_loss=1.1543  val_loss=1.2065  val_dice=0.0096  lr=2.93e-04
+652.5s 253 [fold1-seed42-DirectUNet] epoch 05/30  train_loss=1.1509  val_loss=1.1695  val_dice=0.0109  lr=2.87e-04 *
+654.2s 254 [fold1-seed42-DirectUNet] epoch 06/30  train_loss=1.1474  val_loss=1.1823  val_dice=0.0128  lr=2.80e-04 *
+655.9s 255 [fold1-seed42-DirectUNet] epoch 07/30  train_loss=1.1506  val_loss=1.1831  val_dice=0.0141  lr=2.72e-04 *
+657.5s 256 [fold1-seed42-DirectUNet] epoch 08/30  train_loss=1.1434  val_loss=1.1735  val_dice=0.0131  lr=2.62e-04
+659.2s 257 [fold1-seed42-DirectUNet] epoch 09/30  train_loss=1.1405  val_loss=1.2191  val_dice=0.0105  lr=2.51e-04
+660.9s 258 [fold1-seed42-DirectUNet] epoch 10/30  train_loss=1.1362  val_loss=1.1842  val_dice=0.0101  lr=2.39e-04
+662.6s 259 [fold1-seed42-DirectUNet] epoch 11/30  train_loss=1.1318  val_loss=1.1689  val_dice=0.0156  lr=2.26e-04 *
+664.3s 260 [fold1-seed42-DirectUNet] epoch 12/30  train_loss=1.1282  val_loss=1.1917  val_dice=0.0136  lr=2.12e-04
+666.0s 261 [fold1-seed42-DirectUNet] epoch 13/30  train_loss=1.1238  val_loss=1.2480  val_dice=0.0139  lr=1.97e-04
+667.7s 262 [fold1-seed42-DirectUNet] epoch 14/30  train_loss=1.1220  val_loss=1.2096  val_dice=0.0153  lr=1.82e-04
+669.4s 263 [fold1-seed42-DirectUNet] epoch 15/30  train_loss=1.1203  val_loss=1.1672  val_dice=0.0134  lr=1.67e-04
+671.1s 264 [fold1-seed42-DirectUNet] epoch 16/30  train_loss=1.1183  val_loss=1.1997  val_dice=0.0128  lr=1.51e-04
+672.7s 265 [fold1-seed42-DirectUNet] epoch 17/30  train_loss=1.1157  val_loss=1.2089  val_dice=0.0121  lr=1.36e-04
+672.7s 266 [fold1-seed42-DirectUNet] early stopping at epoch 17 (no improvement for 6 epochs; best was epoch 11)
+673.7s 267 [checkpoint] saved fold 1 seed 42 result -> outputs/kfold_checkpoint_direct_unet.csv
+673.7s 268 
+673.7s 269 ===== Fold 1/5  |  seed 43 (2/5) =====
+676.3s 270 [fold1-seed43-DirectUNet] epoch 01/30  train_loss=1.4072  val_loss=1.2766  val_dice=0.0070  lr=3.00e-04 *
+678.0s 271 [fold1-seed43-DirectUNet] epoch 02/30  train_loss=1.1800  val_loss=1.2072  val_dice=0.0103  lr=2.99e-04 *
+679.8s 272 [fold1-seed43-DirectUNet] epoch 03/30  train_loss=1.1638  val_loss=1.1798  val_dice=0.0117  lr=2.97e-04 *
+681.5s 273 [fold1-seed43-DirectUNet] epoch 04/30  train_loss=1.1574  val_loss=1.1861  val_dice=0.0101  lr=2.93e-04
+683.3s 274 [fold1-seed43-DirectUNet] epoch 05/30  train_loss=1.1528  val_loss=1.1889  val_dice=0.0123  lr=2.87e-04 *
+685.0s 275 [fold1-seed43-DirectUNet] epoch 06/30  train_loss=1.1509  val_loss=1.1746  val_dice=0.0123  lr=2.80e-04 *
+686.8s 276 [fold1-seed43-DirectUNet] epoch 07/30  train_loss=1.1479  val_loss=1.1725  val_dice=0.0112  lr=2.72e-04
+688.5s 277 [fold1-seed43-DirectUNet] epoch 08/30  train_loss=1.1452  val_loss=1.1751  val_dice=0.0135  lr=2.62e-04 *
+690.2s 278 [fold1-seed43-DirectUNet] epoch 09/30  train_loss=1.1422  val_loss=1.1835  val_dice=0.0120  lr=2.51e-04
+691.9s 279 [fold1-seed43-DirectUNet] epoch 10/30  train_loss=1.1436  val_loss=1.1736  val_dice=0.0119  lr=2.39e-04
+693.6s 280 [fold1-seed43-DirectUNet] epoch 11/30  train_loss=1.1379  val_loss=1.1607  val_dice=0.0126  lr=2.26e-04
+695.3s 281 [fold1-seed43-DirectUNet] epoch 12/30  train_loss=1.1364  val_loss=1.1896  val_dice=0.0126  lr=2.12e-04
+697.0s 282 [fold1-seed43-DirectUNet] epoch 13/30  train_loss=1.1356  val_loss=1.1672  val_dice=0.0126  lr=1.97e-04
+698.7s 283 [fold1-seed43-DirectUNet] epoch 14/30  train_loss=1.1289  val_loss=1.1619  val_dice=0.0137  lr=1.82e-04 *
+700.4s 284 [fold1-seed43-DirectUNet] epoch 15/30  train_loss=1.1256  val_loss=1.1653  val_dice=0.0146  lr=1.67e-04 *
+702.1s 285 [fold1-seed43-DirectUNet] epoch 16/30  train_loss=1.1239  val_loss=1.1730  val_dice=0.0137  lr=1.51e-04
+703.8s 286 [fold1-seed43-DirectUNet] epoch 17/30  train_loss=1.1238  val_loss=1.1582  val_dice=0.0135  lr=1.36e-04
+705.5s 287 [fold1-seed43-DirectUNet] epoch 18/30  train_loss=1.1196  val_loss=1.1609  val_dice=0.0151  lr=1.21e-04 *
+707.1s 288 [fold1-seed43-DirectUNet] epoch 19/30  train_loss=1.1186  val_loss=1.1494  val_dice=0.0154  lr=1.06e-04 *
+708.8s 289 [fold1-seed43-DirectUNet] epoch 20/30  train_loss=1.1173  val_loss=1.1557  val_dice=0.0150  lr=9.11e-05
+710.5s 290 [fold1-seed43-DirectUNet] epoch 21/30  train_loss=1.1136  val_loss=1.1517  val_dice=0.0163  lr=7.73e-05 *
+712.2s 291 [fold1-seed43-DirectUNet] epoch 22/30  train_loss=1.1123  val_loss=1.1579  val_dice=0.0156  lr=6.42e-05
+713.9s 292 [fold1-seed43-DirectUNet] epoch 23/30  train_loss=1.1093  val_loss=1.1510  val_dice=0.0166  lr=5.21e-05 *
+715.5s 293 [fold1-seed43-DirectUNet] epoch 24/30  train_loss=1.1083  val_loss=1.1512  val_dice=0.0177  lr=4.11e-05 *
+717.1s 294 [fold1-seed43-DirectUNet] epoch 25/30  train_loss=1.1083  val_loss=1.1543  val_dice=0.0176  lr=3.14e-05
+718.8s 295 [fold1-seed43-DirectUNet] epoch 26/30  train_loss=1.1084  val_loss=1.1506  val_dice=0.0170  lr=2.29e-05
+720.4s 296 [fold1-seed43-DirectUNet] epoch 27/30  train_loss=1.1061  val_loss=1.1518  val_dice=0.0172  lr=1.58e-05
+722.1s 297 [fold1-seed43-DirectUNet] epoch 28/30  train_loss=1.1063  val_loss=1.1522  val_dice=0.0170  lr=1.03e-05
+723.8s 298 [fold1-seed43-DirectUNet] epoch 29/30  train_loss=1.1051  val_loss=1.1506  val_dice=0.0172  lr=6.25e-06
+725.4s 299 [fold1-seed43-DirectUNet] epoch 30/30  train_loss=1.1035  val_loss=1.1518  val_dice=0.0170  lr=3.81e-06
+725.4s 300 [fold1-seed43-DirectUNet] early stopping at epoch 30 (no improvement for 6 epochs; best was epoch 24)
+726.2s 301 [checkpoint] saved fold 1 seed 43 result -> outputs/kfold_checkpoint_direct_unet.csv
+726.2s 302 
+726.2s 303 ===== Fold 1/5  |  seed 44 (3/5) =====
+728.6s 304 [fold1-seed44-DirectUNet] epoch 01/30  train_loss=1.3952  val_loss=1.1821  val_dice=0.0046  lr=3.00e-04 *
+730.3s 305 [fold1-seed44-DirectUNet] epoch 02/30  train_loss=1.1954  val_loss=1.1378  val_dice=0.0060  lr=2.99e-04 *
+732.0s 306 [fold1-seed44-DirectUNet] epoch 03/30  train_loss=1.1775  val_loss=1.1158  val_dice=0.0055  lr=2.97e-04
+733.6s 307 [fold1-seed44-DirectUNet] epoch 04/30  train_loss=1.1676  val_loss=1.1090  val_dice=0.0066  lr=2.93e-04 *
+735.3s 308 [fold1-seed44-DirectUNet] epoch 05/30  train_loss=1.1633  val_loss=1.1154  val_dice=0.0059  lr=2.87e-04
+736.9s 309 [fold1-seed44-DirectUNet] epoch 06/30  train_loss=1.1587  val_loss=1.1074  val_dice=0.0071  lr=2.80e-04 *
+738.6s 310 [fold1-seed44-DirectUNet] epoch 07/30  train_loss=1.1536  val_loss=1.1313  val_dice=0.0059  lr=2.72e-04
+740.2s 311 [fold1-seed44-DirectUNet] epoch 08/30  train_loss=1.1539  val_loss=1.1205  val_dice=0.0074  lr=2.62e-04 *
+741.9s 312 [fold1-seed44-DirectUNet] epoch 09/30  train_loss=1.1507  val_loss=1.1007  val_dice=0.0074  lr=2.51e-04
+743.6s 313 [fold1-seed44-DirectUNet] epoch 10/30  train_loss=1.1463  val_loss=1.1063  val_dice=0.0070  lr=2.39e-04
+745.3s 314 [fold1-seed44-DirectUNet] epoch 11/30  train_loss=1.1413  val_loss=1.1173  val_dice=0.0075  lr=2.26e-04 *
+746.9s 315 [fold1-seed44-DirectUNet] epoch 12/30  train_loss=1.1409  val_loss=1.1115  val_dice=0.0076  lr=2.12e-04 *
+748.6s 316 [fold1-seed44-DirectUNet] epoch 13/30  train_loss=1.1335  val_loss=1.0970  val_dice=0.0085  lr=1.97e-04 *
+750.3s 317 [fold1-seed44-DirectUNet] epoch 14/30  train_loss=1.1310  val_loss=1.0991  val_dice=0.0084  lr=1.82e-04
+752.0s 318 [fold1-seed44-DirectUNet] epoch 15/30  train_loss=1.1300  val_loss=1.0895  val_dice=0.0083  lr=1.67e-04
+753.7s 319 [fold1-seed44-DirectUNet] epoch 16/30  train_loss=1.1287  val_loss=1.0884  val_dice=0.0104  lr=1.51e-04 *
+755.4s 320 [fold1-seed44-DirectUNet] epoch 17/30  train_loss=1.1248  val_loss=1.0912  val_dice=0.0098  lr=1.36e-04
+757.0s 321 [fold1-seed44-DirectUNet] epoch 18/30  train_loss=1.1223  val_loss=1.0900  val_dice=0.0100  lr=1.21e-04
+758.7s 322 [fold1-seed44-DirectUNet] epoch 19/30  train_loss=1.1188  val_loss=1.0941  val_dice=0.0120  lr=1.06e-04 *
+760.4s 323 [fold1-seed44-DirectUNet] epoch 20/30  train_loss=1.1157  val_loss=1.0901  val_dice=0.0097  lr=9.11e-05
+762.1s 324 [fold1-seed44-DirectUNet] epoch 21/30  train_loss=1.1119  val_loss=1.0867  val_dice=0.0118  lr=7.73e-05
+763.8s 325 [fold1-seed44-DirectUNet] epoch 22/30  train_loss=1.1176  val_loss=1.0893  val_dice=0.0107  lr=6.42e-05
+765.5s 326 [fold1-seed44-DirectUNet] epoch 23/30  train_loss=1.1139  val_loss=1.0862  val_dice=0.0113  lr=5.21e-05
+767.2s 327 [fold1-seed44-DirectUNet] epoch 24/30  train_loss=1.1112  val_loss=1.0868  val_dice=0.0113  lr=4.11e-05
+768.9s 328 [fold1-seed44-DirectUNet] epoch 25/30  train_loss=1.1096  val_loss=1.0863  val_dice=0.0110  lr=3.14e-05
+768.9s 329 [fold1-seed44-DirectUNet] early stopping at epoch 25 (no improvement for 6 epochs; best was epoch 19)
+769.6s 330 [checkpoint] saved fold 1 seed 44 result -> outputs/kfold_checkpoint_direct_unet.csv
+769.6s 331 
+769.6s 332 ===== Fold 1/5  |  seed 45 (4/5) =====
+772.1s 333 [fold1-seed45-DirectUNet] epoch 01/30  train_loss=1.3565  val_loss=1.3694  val_dice=0.0180  lr=3.00e-04 *
+773.8s 334 [fold1-seed45-DirectUNet] epoch 02/30  train_loss=1.1590  val_loss=1.3469  val_dice=0.0171  lr=2.99e-04
+775.6s 335 [fold1-seed45-DirectUNet] epoch 03/30  train_loss=1.1506  val_loss=1.3018  val_dice=0.0184  lr=2.97e-04 *
+777.3s 336 [fold1-seed45-DirectUNet] epoch 04/30  train_loss=1.1428  val_loss=1.3082  val_dice=0.0195  lr=2.93e-04 *
+779.0s 337 [fold1-seed45-DirectUNet] epoch 05/30  train_loss=1.1407  val_loss=1.2874  val_dice=0.0231  lr=2.87e-04 *
+780.6s 338 [fold1-seed45-DirectUNet] epoch 06/30  train_loss=1.1394  val_loss=1.3038  val_dice=0.0194  lr=2.80e-04
+782.3s 339 [fold1-seed45-DirectUNet] epoch 07/30  train_loss=1.1355  val_loss=1.2828  val_dice=0.0207  lr=2.72e-04
+784.1s 340 [fold1-seed45-DirectUNet] epoch 08/30  train_loss=1.1350  val_loss=1.2944  val_dice=0.0204  lr=2.62e-04
+785.8s 341 [fold1-seed45-DirectUNet] epoch 09/30  train_loss=1.1295  val_loss=1.2752  val_dice=0.0229  lr=2.51e-04
+787.5s 342 [fold1-seed45-DirectUNet] epoch 10/30  train_loss=1.1291  val_loss=1.2839  val_dice=0.0255  lr=2.39e-04 *
+789.2s 343 [fold1-seed45-DirectUNet] epoch 11/30  train_loss=1.1264  val_loss=1.2673  val_dice=0.0230  lr=2.26e-04
+790.8s 344 [fold1-seed45-DirectUNet] epoch 12/30  train_loss=1.1198  val_loss=1.2725  val_dice=0.0247  lr=2.12e-04
+792.5s 345 [fold1-seed45-DirectUNet] epoch 13/30  train_loss=1.1171  val_loss=1.2708  val_dice=0.0231  lr=1.97e-04
+794.2s 346 [fold1-seed45-DirectUNet] epoch 14/30  train_loss=1.1159  val_loss=1.2721  val_dice=0.0287  lr=1.82e-04 *
+795.9s 347 [fold1-seed45-DirectUNet] epoch 15/30  train_loss=1.1140  val_loss=1.3128  val_dice=0.0243  lr=1.67e-04
+797.6s 348 [fold1-seed45-DirectUNet] epoch 16/30  train_loss=1.1068  val_loss=1.3321  val_dice=0.0259  lr=1.51e-04
+799.2s 349 [fold1-seed45-DirectUNet] epoch 17/30  train_loss=1.1077  val_loss=1.2967  val_dice=0.0251  lr=1.36e-04
+800.9s 350 [fold1-seed45-DirectUNet] epoch 18/30  train_loss=1.1049  val_loss=1.3118  val_dice=0.0259  lr=1.21e-04
+802.6s 351 [fold1-seed45-DirectUNet] epoch 19/30  train_loss=1.1033  val_loss=1.3204  val_dice=0.0262  lr=1.06e-04
+804.3s 352 [fold1-seed45-DirectUNet] epoch 20/30  train_loss=1.0999  val_loss=1.3041  val_dice=0.0282  lr=9.11e-05
+804.3s 353 [fold1-seed45-DirectUNet] early stopping at epoch 20 (no improvement for 6 epochs; best was epoch 14)
+805.0s 354 [checkpoint] saved fold 1 seed 45 result -> outputs/kfold_checkpoint_direct_unet.csv
+805.0s 355 
+805.0s 356 ===== Fold 1/5  |  seed 46 (5/5) =====
+807.5s 357 [fold1-seed46-DirectUNet] epoch 01/30  train_loss=1.3552  val_loss=1.1913  val_dice=0.0033  lr=3.00e-04 *
+809.2s 358 [fold1-seed46-DirectUNet] epoch 02/30  train_loss=1.1821  val_loss=1.1090  val_dice=0.0046  lr=2.99e-04 *
+810.8s 359 [fold1-seed46-DirectUNet] epoch 03/30  train_loss=1.1707  val_loss=1.1130  val_dice=0.0044  lr=2.97e-04
+812.5s 360 [fold1-seed46-DirectUNet] epoch 04/30  train_loss=1.1689  val_loss=1.1052  val_dice=0.0053  lr=2.93e-04 *
+814.2s 361 [fold1-seed46-DirectUNet] epoch 05/30  train_loss=1.1662  val_loss=1.1161  val_dice=0.0050  lr=2.87e-04
+815.9s 362 [fold1-seed46-DirectUNet] epoch 06/30  train_loss=1.1609  val_loss=1.1083  val_dice=0.0059  lr=2.80e-04 *
+817.5s 363 [fold1-seed46-DirectUNet] epoch 07/30  train_loss=1.1634  val_loss=1.1209  val_dice=0.0044  lr=2.72e-04
+819.2s 364 [fold1-seed46-DirectUNet] epoch 08/30  train_loss=1.1585  val_loss=1.1004  val_dice=0.0058  lr=2.62e-04
+820.9s 365 [fold1-seed46-DirectUNet] epoch 09/30  train_loss=1.1526  val_loss=1.0943  val_dice=0.0067  lr=2.51e-04 *
+822.6s 366 [fold1-seed46-DirectUNet] epoch 10/30  train_loss=1.1513  val_loss=1.0991  val_dice=0.0059  lr=2.39e-04
+824.2s 367 [fold1-seed46-DirectUNet] epoch 11/30  train_loss=1.1457  val_loss=1.0912  val_dice=0.0057  lr=2.26e-04
+825.9s 368 [fold1-seed46-DirectUNet] epoch 12/30  train_loss=1.1492  val_loss=1.1033  val_dice=0.0068  lr=2.12e-04 *
+827.6s 369 [fold1-seed46-DirectUNet] epoch 13/30  train_loss=1.1411  val_loss=1.0826  val_dice=0.0066  lr=1.97e-04
+829.3s 370 [fold1-seed46-DirectUNet] epoch 14/30  train_loss=1.1384  val_loss=1.0889  val_dice=0.0084  lr=1.82e-04 *
+831.0s 371 [fold1-seed46-DirectUNet] epoch 15/30  train_loss=1.1364  val_loss=1.0836  val_dice=0.0072  lr=1.67e-04
+832.6s 372 [fold1-seed46-DirectUNet] epoch 16/30  train_loss=1.1365  val_loss=1.0906  val_dice=0.0072  lr=1.51e-04
+834.3s 373 [fold1-seed46-DirectUNet] epoch 17/30  train_loss=1.1318  val_loss=1.0971  val_dice=0.0084  lr=1.36e-04 *
+836.0s 374 [fold1-seed46-DirectUNet] epoch 18/30  train_loss=1.1289  val_loss=1.0895  val_dice=0.0091  lr=1.21e-04 *
+837.7s 375 [fold1-seed46-DirectUNet] epoch 19/30  train_loss=1.1234  val_loss=1.0783  val_dice=0.0089  lr=1.06e-04
+839.3s 376 [fold1-seed46-DirectUNet] epoch 20/30  train_loss=1.1248  val_loss=1.0803  val_dice=0.0101  lr=9.11e-05 *
+841.0s 377 [fold1-seed46-DirectUNet] epoch 21/30  train_loss=1.1203  val_loss=1.0874  val_dice=0.0093  lr=7.73e-05
+842.7s 378 [fold1-seed46-DirectUNet] epoch 22/30  train_loss=1.1224  val_loss=1.0857  val_dice=0.0099  lr=6.42e-05
+844.4s 379 [fold1-seed46-DirectUNet] epoch 23/30  train_loss=1.1191  val_loss=1.0820  val_dice=0.0094  lr=5.21e-05
+846.1s 380 [fold1-seed46-DirectUNet] epoch 24/30  train_loss=1.1169  val_loss=1.0774  val_dice=0.0096  lr=4.11e-05
+847.7s 381 [fold1-seed46-DirectUNet] epoch 25/30  train_loss=1.1165  val_loss=1.0822  val_dice=0.0101  lr=3.14e-05 *
+849.4s 382 [fold1-seed46-DirectUNet] epoch 26/30  train_loss=1.1155  val_loss=1.0814  val_dice=0.0103  lr=2.29e-05 *
+851.1s 383 [fold1-seed46-DirectUNet] epoch 27/30  train_loss=1.1152  val_loss=1.0842  val_dice=0.0103  lr=1.58e-05
+852.8s 384 [fold1-seed46-DirectUNet] epoch 28/30  train_loss=1.1162  val_loss=1.0825  val_dice=0.0102  lr=1.03e-05
+854.4s 385 [fold1-seed46-DirectUNet] epoch 29/30  train_loss=1.1144  val_loss=1.0849  val_dice=0.0103  lr=6.25e-06
+856.1s 386 [fold1-seed46-DirectUNet] epoch 30/30  train_loss=1.1144  val_loss=1.0832  val_dice=0.0104  lr=3.81e-06 *
+857.0s 387 [checkpoint] saved fold 1 seed 46 result -> outputs/kfold_checkpoint_direct_unet.csv
+857.0s 388 
+857.0s 389 [kfold-direct] fold 2/5: loading 16 train/val + 4 test patient(s) into cache...
+963.5s 390 [SliceCache] loaded + precomputed 16 patient(s), 689 usable slice(s).
+991.1s 391 [SliceCache] loaded + precomputed 4 patient(s), 172 usable slice(s).
+991.1s 392 
+991.1s 393 ===== Fold 2/5  |  seed 42 (1/5) =====
+993.7s 394 [fold2-seed42-DirectUNet] epoch 01/30  train_loss=1.3413  val_loss=1.2323  val_dice=0.0128  lr=3.00e-04 *
+995.3s 395 [fold2-seed42-DirectUNet] epoch 02/30  train_loss=1.1792  val_loss=1.1900  val_dice=0.0172  lr=2.99e-04 *
+997.0s 396 [fold2-seed42-DirectUNet] epoch 03/30  train_loss=1.1657  val_loss=1.2463  val_dice=0.0164  lr=2.97e-04
+998.6s 397 [fold2-seed42-DirectUNet] epoch 04/30  train_loss=1.1598  val_loss=1.1840  val_dice=0.0162  lr=2.93e-04
+1000.3s 398 [fold2-seed42-DirectUNet] epoch 05/30  train_loss=1.1558  val_loss=1.2074  val_dice=0.0157  lr=2.87e-04
+1001.9s 399 [fold2-seed42-DirectUNet] epoch 06/30  train_loss=1.1526  val_loss=1.1894  val_dice=0.0180  lr=2.80e-04 *
+1003.6s 400 [fold2-seed42-DirectUNet] epoch 07/30  train_loss=1.1502  val_loss=1.1947  val_dice=0.0176  lr=2.72e-04
+1005.3s 401 [fold2-seed42-DirectUNet] epoch 08/30  train_loss=1.1468  val_loss=1.2143  val_dice=0.0184  lr=2.62e-04 *
+1007.0s 402 [fold2-seed42-DirectUNet] epoch 09/30  train_loss=1.1459  val_loss=1.2014  val_dice=0.0186  lr=2.51e-04 *
+1008.7s 403 [fold2-seed42-DirectUNet] epoch 10/30  train_loss=1.1440  val_loss=1.2278  val_dice=0.0175  lr=2.39e-04
+1010.4s 404 [fold2-seed42-DirectUNet] epoch 11/30  train_loss=1.1400  val_loss=1.1785  val_dice=0.0192  lr=2.26e-04 *
+1012.1s 405 [fold2-seed42-DirectUNet] epoch 12/30  train_loss=1.1408  val_loss=1.1916  val_dice=0.0181  lr=2.12e-04
+1013.8s 406 [fold2-seed42-DirectUNet] epoch 13/30  train_loss=1.1369  val_loss=1.1883  val_dice=0.0195  lr=1.97e-04 *
+1015.5s 407 [fold2-seed42-DirectUNet] epoch 14/30  train_loss=1.1375  val_loss=1.1764  val_dice=0.0185  lr=1.82e-04
+1017.2s 408 [fold2-seed42-DirectUNet] epoch 15/30  train_loss=1.1359  val_loss=1.1867  val_dice=0.0189  lr=1.67e-04
+1019.0s 409 [fold2-seed42-DirectUNet] epoch 16/30  train_loss=1.1332  val_loss=1.1848  val_dice=0.0204  lr=1.51e-04 *
+1020.7s 410 [fold2-seed42-DirectUNet] epoch 17/30  train_loss=1.1317  val_loss=1.1816  val_dice=0.0181  lr=1.36e-04
+1022.4s 411 [fold2-seed42-DirectUNet] epoch 18/30  train_loss=1.1281  val_loss=1.1805  val_dice=0.0188  lr=1.21e-04
+1024.2s 412 [fold2-seed42-DirectUNet] epoch 19/30  train_loss=1.1263  val_loss=1.1861  val_dice=0.0186  lr=1.06e-04
+1025.9s 413 [fold2-seed42-DirectUNet] epoch 20/30  train_loss=1.1280  val_loss=1.2108  val_dice=0.0188  lr=9.11e-05
+1027.6s 414 [fold2-seed42-DirectUNet] epoch 21/30  train_loss=1.1253  val_loss=1.2068  val_dice=0.0198  lr=7.73e-05
+1029.2s 415 [fold2-seed42-DirectUNet] epoch 22/30  train_loss=1.1226  val_loss=1.1844  val_dice=0.0191  lr=6.42e-05
+1029.2s 416 [fold2-seed42-DirectUNet] early stopping at epoch 22 (no improvement for 6 epochs; best was epoch 16)
+1030.3s 417 [checkpoint] saved fold 2 seed 42 result -> outputs/kfold_checkpoint_direct_unet.csv
+1030.3s 418 
+1030.3s 419 ===== Fold 2/5  |  seed 43 (2/5) =====
+1033.0s 420 [fold2-seed43-DirectUNet] epoch 01/30  train_loss=1.4362  val_loss=1.2481  val_dice=0.0039  lr=3.00e-04 *
+1034.7s 421 [fold2-seed43-DirectUNet] epoch 02/30  train_loss=1.1924  val_loss=1.1475  val_dice=0.0068  lr=2.99e-04 *
+1036.5s 422 [fold2-seed43-DirectUNet] epoch 03/30  train_loss=1.1762  val_loss=1.1398  val_dice=0.0077  lr=2.97e-04 *
+1038.1s 423 [fold2-seed43-DirectUNet] epoch 04/30  train_loss=1.1720  val_loss=1.1373  val_dice=0.0083  lr=2.93e-04 *
+1039.8s 424 [fold2-seed43-DirectUNet] epoch 05/30  train_loss=1.1698  val_loss=1.1627  val_dice=0.0081  lr=2.87e-04
+1041.5s 425 [fold2-seed43-DirectUNet] epoch 06/30  train_loss=1.1664  val_loss=1.1415  val_dice=0.0085  lr=2.80e-04 *
+1043.2s 426 [fold2-seed43-DirectUNet] epoch 07/30  train_loss=1.1671  val_loss=1.1433  val_dice=0.0089  lr=2.72e-04 *
+1044.9s 427 [fold2-seed43-DirectUNet] epoch 08/30  train_loss=1.1616  val_loss=1.1490  val_dice=0.0097  lr=2.62e-04 *
+1046.6s 428 [fold2-seed43-DirectUNet] epoch 09/30  train_loss=1.1621  val_loss=1.1298  val_dice=0.0090  lr=2.51e-04
+1048.3s 429 [fold2-seed43-DirectUNet] epoch 10/30  train_loss=1.1582  val_loss=1.1175  val_dice=0.0099  lr=2.39e-04 *
+1050.0s 430 [fold2-seed43-DirectUNet] epoch 11/30  train_loss=1.1574  val_loss=1.1221  val_dice=0.0090  lr=2.26e-04
+1051.7s 431 [fold2-seed43-DirectUNet] epoch 12/30  train_loss=1.1537  val_loss=1.1799  val_dice=0.0108  lr=2.12e-04 *
+1053.3s 432 [fold2-seed43-DirectUNet] epoch 13/30  train_loss=1.1516  val_loss=1.1340  val_dice=0.0103  lr=1.97e-04
+1055.0s 433 [fold2-seed43-DirectUNet] epoch 14/30  train_loss=1.1450  val_loss=1.1296  val_dice=0.0118  lr=1.82e-04 *
+1056.7s 434 [fold2-seed43-DirectUNet] epoch 15/30  train_loss=1.1432  val_loss=1.1306  val_dice=0.0107  lr=1.67e-04
+1058.3s 435 [fold2-seed43-DirectUNet] epoch 16/30  train_loss=1.1444  val_loss=1.1270  val_dice=0.0115  lr=1.51e-04
+1060.0s 436 [fold2-seed43-DirectUNet] epoch 17/30  train_loss=1.1401  val_loss=1.1423  val_dice=0.0109  lr=1.36e-04
+1061.6s 437 [fold2-seed43-DirectUNet] epoch 18/30  train_loss=1.1395  val_loss=1.1293  val_dice=0.0114  lr=1.21e-04
+1063.3s 438 [fold2-seed43-DirectUNet] epoch 19/30  train_loss=1.1381  val_loss=1.1448  val_dice=0.0123  lr=1.06e-04 *
+1064.9s 439 [fold2-seed43-DirectUNet] epoch 20/30  train_loss=1.1364  val_loss=1.1308  val_dice=0.0134  lr=9.11e-05 *
+1066.6s 440 [fold2-seed43-DirectUNet] epoch 21/30  train_loss=1.1331  val_loss=1.1325  val_dice=0.0128  lr=7.73e-05
+1068.2s 441 [fold2-seed43-DirectUNet] epoch 22/30  train_loss=1.1324  val_loss=1.1370  val_dice=0.0124  lr=6.42e-05
+1069.9s 442 [fold2-seed43-DirectUNet] epoch 23/30  train_loss=1.1333  val_loss=1.1332  val_dice=0.0128  lr=5.21e-05
+1071.5s 443 [fold2-seed43-DirectUNet] epoch 24/30  train_loss=1.1322  val_loss=1.1310  val_dice=0.0128  lr=4.11e-05
+1073.2s 444 [fold2-seed43-DirectUNet] epoch 25/30  train_loss=1.1289  val_loss=1.1381  val_dice=0.0127  lr=3.14e-05
+1074.8s 445 [fold2-seed43-DirectUNet] epoch 26/30  train_loss=1.1277  val_loss=1.1314  val_dice=0.0131  lr=2.29e-05
+1074.8s 446 [fold2-seed43-DirectUNet] early stopping at epoch 26 (no improvement for 6 epochs; best was epoch 20)
+1075.6s 447 [checkpoint] saved fold 2 seed 43 result -> outputs/kfold_checkpoint_direct_unet.csv
+1075.6s 448 
+1075.6s 449 ===== Fold 2/5  |  seed 44 (3/5) =====
+1078.0s 450 [fold2-seed44-DirectUNet] epoch 01/30  train_loss=1.3761  val_loss=1.4442  val_dice=0.0142  lr=3.00e-04 *
+1079.7s 451 [fold2-seed44-DirectUNet] epoch 02/30  train_loss=1.1847  val_loss=1.3174  val_dice=0.0142  lr=2.99e-04 *
+1081.4s 452 [fold2-seed44-DirectUNet] epoch 03/30  train_loss=1.1622  val_loss=1.2947  val_dice=0.0164  lr=2.97e-04 *
+1083.1s 453 [fold2-seed44-DirectUNet] epoch 04/30  train_loss=1.1578  val_loss=1.2778  val_dice=0.0163  lr=2.93e-04
+1084.8s 454 [fold2-seed44-DirectUNet] epoch 05/30  train_loss=1.1548  val_loss=1.2799  val_dice=0.0170  lr=2.87e-04 *
+1086.4s 455 [fold2-seed44-DirectUNet] epoch 06/30  train_loss=1.1533  val_loss=1.3474  val_dice=0.0179  lr=2.80e-04 *
+1088.1s 456 [fold2-seed44-DirectUNet] epoch 07/30  train_loss=1.1482  val_loss=1.2900  val_dice=0.0176  lr=2.72e-04
+1089.8s 457 [fold2-seed44-DirectUNet] epoch 08/30  train_loss=1.1447  val_loss=1.2947  val_dice=0.0164  lr=2.62e-04
+1091.4s 458 [fold2-seed44-DirectUNet] epoch 09/30  train_loss=1.1443  val_loss=1.2653  val_dice=0.0191  lr=2.51e-04 *
+1093.1s 459 [fold2-seed44-DirectUNet] epoch 10/30  train_loss=1.1400  val_loss=1.2552  val_dice=0.0192  lr=2.39e-04 *
+1094.8s 460 [fold2-seed44-DirectUNet] epoch 11/30  train_loss=1.1419  val_loss=1.2794  val_dice=0.0196  lr=2.26e-04 *
+1096.5s 461 [fold2-seed44-DirectUNet] epoch 12/30  train_loss=1.1369  val_loss=1.2769  val_dice=0.0179  lr=2.12e-04
+1098.2s 462 [fold2-seed44-DirectUNet] epoch 13/30  train_loss=1.1370  val_loss=1.3005  val_dice=0.0188  lr=1.97e-04
+1099.9s 463 [fold2-seed44-DirectUNet] epoch 14/30  train_loss=1.1323  val_loss=1.2746  val_dice=0.0183  lr=1.82e-04
+1101.6s 464 [fold2-seed44-DirectUNet] epoch 15/30  train_loss=1.1338  val_loss=1.2401  val_dice=0.0224  lr=1.67e-04 *
+1103.3s 465 [fold2-seed44-DirectUNet] epoch 16/30  train_loss=1.1288  val_loss=1.3029  val_dice=0.0241  lr=1.51e-04 *
+1105.0s 466 [fold2-seed44-DirectUNet] epoch 17/30  train_loss=1.1310  val_loss=1.2502  val_dice=0.0231  lr=1.36e-04
+1106.7s 467 [fold2-seed44-DirectUNet] epoch 18/30  train_loss=1.1292  val_loss=1.2859  val_dice=0.0245  lr=1.21e-04 *
+1108.4s 468 [fold2-seed44-DirectUNet] epoch 19/30  train_loss=1.1275  val_loss=1.2714  val_dice=0.0254  lr=1.06e-04 *
+1110.1s 469 [fold2-seed44-DirectUNet] epoch 20/30  train_loss=1.1262  val_loss=1.2643  val_dice=0.0250  lr=9.11e-05
+1111.8s 470 [fold2-seed44-DirectUNet] epoch 21/30  train_loss=1.1227  val_loss=1.2955  val_dice=0.0241  lr=7.73e-05
+1113.5s 471 [fold2-seed44-DirectUNet] epoch 22/30  train_loss=1.1216  val_loss=1.2850  val_dice=0.0265  lr=6.42e-05 *
+1115.2s 472 [fold2-seed44-DirectUNet] epoch 23/30  train_loss=1.1214  val_loss=1.2828  val_dice=0.0272  lr=5.21e-05 *
+1117.0s 473 [fold2-seed44-DirectUNet] epoch 24/30  train_loss=1.1199  val_loss=1.2641  val_dice=0.0282  lr=4.11e-05 *
+1118.7s 474 [fold2-seed44-DirectUNet] epoch 25/30  train_loss=1.1187  val_loss=1.2846  val_dice=0.0267  lr=3.14e-05
+1120.4s 475 [fold2-seed44-DirectUNet] epoch 26/30  train_loss=1.1156  val_loss=1.2833  val_dice=0.0279  lr=2.29e-05
+1122.1s 476 [fold2-seed44-DirectUNet] epoch 27/30  train_loss=1.1154  val_loss=1.2981  val_dice=0.0291  lr=1.58e-05 *
+1123.8s 477 [fold2-seed44-DirectUNet] epoch 28/30  train_loss=1.1149  val_loss=1.3071  val_dice=0.0302  lr=1.03e-05 *
+1125.4s 478 [fold2-seed44-DirectUNet] epoch 29/30  train_loss=1.1129  val_loss=1.3017  val_dice=0.0298  lr=6.25e-06
+1127.1s 479 [fold2-seed44-DirectUNet] epoch 30/30  train_loss=1.1142  val_loss=1.2991  val_dice=0.0296  lr=3.81e-06
+1127.9s 480 [checkpoint] saved fold 2 seed 44 result -> outputs/kfold_checkpoint_direct_unet.csv
+1127.9s 481 
+1127.9s 482 ===== Fold 2/5  |  seed 45 (4/5) =====
+1130.4s 483 [fold2-seed45-DirectUNet] epoch 01/30  train_loss=1.3911  val_loss=1.1470  val_dice=0.0037  lr=3.00e-04 *
+1132.1s 484 [fold2-seed45-DirectUNet] epoch 02/30  train_loss=1.1966  val_loss=1.1106  val_dice=0.0041  lr=2.99e-04 *
+1133.8s 485 [fold2-seed45-DirectUNet] epoch 03/30  train_loss=1.1805  val_loss=1.1090  val_dice=0.0048  lr=2.97e-04 *
+1135.4s 486 [fold2-seed45-DirectUNet] epoch 04/30  train_loss=1.1750  val_loss=1.1009  val_dice=0.0050  lr=2.93e-04 *
+1137.1s 487 [fold2-seed45-DirectUNet] epoch 05/30  train_loss=1.1714  val_loss=1.1167  val_dice=0.0054  lr=2.87e-04 *
+1138.8s 488 [fold2-seed45-DirectUNet] epoch 06/30  train_loss=1.1683  val_loss=1.1033  val_dice=0.0048  lr=2.80e-04
+1140.4s 489 [fold2-seed45-DirectUNet] epoch 07/30  train_loss=1.1667  val_loss=1.1224  val_dice=0.0052  lr=2.72e-04
+1142.1s 490 [fold2-seed45-DirectUNet] epoch 08/30  train_loss=1.1643  val_loss=1.1195  val_dice=0.0054  lr=2.62e-04 *
+1143.8s 491 [fold2-seed45-DirectUNet] epoch 09/30  train_loss=1.1634  val_loss=1.0951  val_dice=0.0055  lr=2.51e-04 *
+1145.5s 492 [fold2-seed45-DirectUNet] epoch 10/30  train_loss=1.1584  val_loss=1.1126  val_dice=0.0056  lr=2.39e-04 *
+1147.2s 493 [fold2-seed45-DirectUNet] epoch 11/30  train_loss=1.1582  val_loss=1.0975  val_dice=0.0058  lr=2.26e-04 *
+1148.8s 494 [fold2-seed45-DirectUNet] epoch 12/30  train_loss=1.1540  val_loss=1.1013  val_dice=0.0056  lr=2.12e-04
+1150.5s 495 [fold2-seed45-DirectUNet] epoch 13/30  train_loss=1.1511  val_loss=1.0895  val_dice=0.0065  lr=1.97e-04 *
+1152.2s 496 [fold2-seed45-DirectUNet] epoch 14/30  train_loss=1.1497  val_loss=1.0910  val_dice=0.0063  lr=1.82e-04
+1153.8s 497 [fold2-seed45-DirectUNet] epoch 15/30  train_loss=1.1479  val_loss=1.0884  val_dice=0.0061  lr=1.67e-04
+1155.5s 498 [fold2-seed45-DirectUNet] epoch 16/30  train_loss=1.1474  val_loss=1.0942  val_dice=0.0070  lr=1.51e-04 *
+1157.1s 499 [fold2-seed45-DirectUNet] epoch 17/30  train_loss=1.1458  val_loss=1.0908  val_dice=0.0062  lr=1.36e-04
+1158.8s 500 [fold2-seed45-DirectUNet] epoch 18/30  train_loss=1.1435  val_loss=1.0835  val_dice=0.0073  lr=1.21e-04 *
+1160.5s 501 [fold2-seed45-DirectUNet] epoch 19/30  train_loss=1.1414  val_loss=1.0842  val_dice=0.0075  lr=1.06e-04 *
+1162.1s 502 [fold2-seed45-DirectUNet] epoch 20/30  train_loss=1.1385  val_loss=1.0829  val_dice=0.0075  lr=9.11e-05
+1163.8s 503 [fold2-seed45-DirectUNet] epoch 21/30  train_loss=1.1379  val_loss=1.0806  val_dice=0.0085  lr=7.73e-05 *
+1165.5s 504 [fold2-seed45-DirectUNet] epoch 22/30  train_loss=1.1371  val_loss=1.0880  val_dice=0.0075  lr=6.42e-05
+1167.1s 505 [fold2-seed45-DirectUNet] epoch 23/30  train_loss=1.1380  val_loss=1.0840  val_dice=0.0077  lr=5.21e-05
+1168.8s 506 [fold2-seed45-DirectUNet] epoch 24/30  train_loss=1.1371  val_loss=1.0804  val_dice=0.0081  lr=4.11e-05
+1170.4s 507 [fold2-seed45-DirectUNet] epoch 25/30  train_loss=1.1336  val_loss=1.0804  val_dice=0.0081  lr=3.14e-05
+1172.1s 508 [fold2-seed45-DirectUNet] epoch 26/30  train_loss=1.1343  val_loss=1.0797  val_dice=0.0082  lr=2.29e-05
+1173.8s 509 [fold2-seed45-DirectUNet] epoch 27/30  train_loss=1.1324  val_loss=1.0805  val_dice=0.0082  lr=1.58e-05
+1173.8s 510 [fold2-seed45-DirectUNet] early stopping at epoch 27 (no improvement for 6 epochs; best was epoch 21)
+1174.5s 511 [checkpoint] saved fold 2 seed 45 result -> outputs/kfold_checkpoint_direct_unet.csv
+1174.5s 512 
+1174.5s 513 ===== Fold 2/5  |  seed 46 (5/5) =====
+1177.0s 514 [fold2-seed46-DirectUNet] epoch 01/30  train_loss=1.3322  val_loss=1.2758  val_dice=0.0115  lr=3.00e-04 *
+1178.7s 515 [fold2-seed46-DirectUNet] epoch 02/30  train_loss=1.1743  val_loss=1.2334  val_dice=0.0155  lr=2.99e-04 *
+1180.4s 516 [fold2-seed46-DirectUNet] epoch 03/30  train_loss=1.1616  val_loss=1.2192  val_dice=0.0162  lr=2.97e-04 *
+1182.1s 517 [fold2-seed46-DirectUNet] epoch 04/30  train_loss=1.1579  val_loss=1.2404  val_dice=0.0162  lr=2.93e-04 *
+1183.7s 518 [fold2-seed46-DirectUNet] epoch 05/30  train_loss=1.1538  val_loss=1.2203  val_dice=0.0171  lr=2.87e-04 *
+1185.4s 519 [fold2-seed46-DirectUNet] epoch 06/30  train_loss=1.1523  val_loss=1.2088  val_dice=0.0173  lr=2.80e-04 *
+1187.1s 520 [fold2-seed46-DirectUNet] epoch 07/30  train_loss=1.1527  val_loss=1.2340  val_dice=0.0158  lr=2.72e-04
+1188.8s 521 [fold2-seed46-DirectUNet] epoch 08/30  train_loss=1.1509  val_loss=1.2127  val_dice=0.0191  lr=2.62e-04 *
+1190.5s 522 [fold2-seed46-DirectUNet] epoch 09/30  train_loss=1.1456  val_loss=1.2435  val_dice=0.0204  lr=2.51e-04 *
+1192.2s 523 [fold2-seed46-DirectUNet] epoch 10/30  train_loss=1.1451  val_loss=1.2223  val_dice=0.0194  lr=2.39e-04
+1193.9s 524 [fold2-seed46-DirectUNet] epoch 11/30  train_loss=1.1398  val_loss=1.2137  val_dice=0.0190  lr=2.26e-04
+1195.5s 525 [fold2-seed46-DirectUNet] epoch 12/30  train_loss=1.1380  val_loss=1.2417  val_dice=0.0177  lr=2.12e-04
+1197.2s 526 [fold2-seed46-DirectUNet] epoch 13/30  train_loss=1.1350  val_loss=1.2780  val_dice=0.0200  lr=1.97e-04
+1198.9s 527 [fold2-seed46-DirectUNet] epoch 14/30  train_loss=1.1341  val_loss=1.2806  val_dice=0.0191  lr=1.82e-04
+1200.5s 528 [fold2-seed46-DirectUNet] epoch 15/30  train_loss=1.1322  val_loss=1.2312  val_dice=0.0211  lr=1.67e-04 *
+1202.2s 529 [fold2-seed46-DirectUNet] epoch 16/30  train_loss=1.1302  val_loss=1.2801  val_dice=0.0206  lr=1.51e-04
+1203.9s 530 [fold2-seed46-DirectUNet] epoch 17/30  train_loss=1.1302  val_loss=1.2600  val_dice=0.0227  lr=1.36e-04 *
+1205.6s 531 [fold2-seed46-DirectUNet] epoch 18/30  train_loss=1.1249  val_loss=1.2373  val_dice=0.0208  lr=1.21e-04
+1207.3s 532 [fold2-seed46-DirectUNet] epoch 19/30  train_loss=1.1268  val_loss=1.2423  val_dice=0.0198  lr=1.06e-04
+1209.0s 533 [fold2-seed46-DirectUNet] epoch 20/30  train_loss=1.1234  val_loss=1.2647  val_dice=0.0232  lr=9.11e-05 *
+1210.6s 534 [fold2-seed46-DirectUNet] epoch 21/30  train_loss=1.1225  val_loss=1.2427  val_dice=0.0209  lr=7.73e-05
+1212.3s 535 [fold2-seed46-DirectUNet] epoch 22/30  train_loss=1.1200  val_loss=1.2873  val_dice=0.0241  lr=6.42e-05 *
+1214.0s 536 [fold2-seed46-DirectUNet] epoch 23/30  train_loss=1.1168  val_loss=1.2705  val_dice=0.0244  lr=5.21e-05 *
+1215.7s 537 [fold2-seed46-DirectUNet] epoch 24/30  train_loss=1.1177  val_loss=1.3308  val_dice=0.0237  lr=4.11e-05
+1217.4s 538 [fold2-seed46-DirectUNet] epoch 25/30  train_loss=1.1150  val_loss=1.2818  val_dice=0.0240  lr=3.14e-05
+1219.1s 539 [fold2-seed46-DirectUNet] epoch 26/30  train_loss=1.1143  val_loss=1.2820  val_dice=0.0249  lr=2.29e-05 *
+1220.8s 540 [fold2-seed46-DirectUNet] epoch 27/30  train_loss=1.1145  val_loss=1.2945  val_dice=0.0258  lr=1.58e-05 *
+1222.5s 541 [fold2-seed46-DirectUNet] epoch 28/30  train_loss=1.1156  val_loss=1.2975  val_dice=0.0253  lr=1.03e-05
+1224.1s 542 [fold2-seed46-DirectUNet] epoch 29/30  train_loss=1.1123  val_loss=1.3033  val_dice=0.0255  lr=6.25e-06
+1225.8s 543 [fold2-seed46-DirectUNet] epoch 30/30  train_loss=1.1145  val_loss=1.2971  val_dice=0.0254  lr=3.81e-06
+1226.7s 544 [checkpoint] saved fold 2 seed 46 result -> outputs/kfold_checkpoint_direct_unet.csv
+1226.7s 545 
+1226.7s 546 [kfold-direct] fold 3/5: loading 16 train/val + 4 test patient(s) into cache...
+1343.7s 547 [SliceCache] loaded + precomputed 16 patient(s), 688 usable slice(s).
+1374.2s 548 [SliceCache] loaded + precomputed 4 patient(s), 173 usable slice(s).
+1374.2s 549 
+1374.2s 550 ===== Fold 3/5  |  seed 42 (1/5) =====
+1376.7s 551 [fold3-seed42-DirectUNet] epoch 01/30  train_loss=1.3106  val_loss=1.1689  val_dice=0.0048  lr=3.00e-04 *
+1378.4s 552 [fold3-seed42-DirectUNet] epoch 02/30  train_loss=1.1499  val_loss=1.1297  val_dice=0.0066  lr=2.99e-04 *
+1380.1s 553 [fold3-seed42-DirectUNet] epoch 03/30  train_loss=1.1383  val_loss=1.2575  val_dice=0.0033  lr=2.97e-04
+1381.8s 554 [fold3-seed42-DirectUNet] epoch 04/30  train_loss=1.1368  val_loss=1.1204  val_dice=0.0075  lr=2.93e-04 *
+1383.4s 555 [fold3-seed42-DirectUNet] epoch 05/30  train_loss=1.1368  val_loss=1.1113  val_dice=0.0074  lr=2.87e-04
+1385.1s 556 [fold3-seed42-DirectUNet] epoch 06/30  train_loss=1.1299  val_loss=1.1175  val_dice=0.0073  lr=2.80e-04
+1386.7s 557 [fold3-seed42-DirectUNet] epoch 07/30  train_loss=1.1249  val_loss=1.1506  val_dice=0.0077  lr=2.72e-04 *
+1388.4s 558 [fold3-seed42-DirectUNet] epoch 08/30  train_loss=1.1230  val_loss=1.1356  val_dice=0.0074  lr=2.62e-04
+1390.1s 559 [fold3-seed42-DirectUNet] epoch 09/30  train_loss=1.1258  val_loss=1.1280  val_dice=0.0069  lr=2.51e-04
+1391.8s 560 [fold3-seed42-DirectUNet] epoch 10/30  train_loss=1.1183  val_loss=1.1231  val_dice=0.0083  lr=2.39e-04 *
+1393.5s 561 [fold3-seed42-DirectUNet] epoch 11/30  train_loss=1.1172  val_loss=1.1296  val_dice=0.0078  lr=2.26e-04
+1395.1s 562 [fold3-seed42-DirectUNet] epoch 12/30  train_loss=1.1115  val_loss=1.1064  val_dice=0.0102  lr=2.12e-04 *
+1396.8s 563 [fold3-seed42-DirectUNet] epoch 13/30  train_loss=1.1091  val_loss=1.1052  val_dice=0.0110  lr=1.97e-04 *
+1398.5s 564 [fold3-seed42-DirectUNet] epoch 14/30  train_loss=1.1087  val_loss=1.1282  val_dice=0.0095  lr=1.82e-04
+1400.2s 565 [fold3-seed42-DirectUNet] epoch 15/30  train_loss=1.1063  val_loss=1.0918  val_dice=0.0118  lr=1.67e-04 *
+1402.0s 566 [fold3-seed42-DirectUNet] epoch 16/30  train_loss=1.1044  val_loss=1.1258  val_dice=0.0122  lr=1.51e-04 *
+1403.7s 567 [fold3-seed42-DirectUNet] epoch 17/30  train_loss=1.1001  val_loss=1.0895  val_dice=0.0131  lr=1.36e-04 *
+1405.4s 568 [fold3-seed42-DirectUNet] epoch 18/30  train_loss=1.0976  val_loss=1.0978  val_dice=0.0127  lr=1.21e-04
+1407.1s 569 [fold3-seed42-DirectUNet] epoch 19/30  train_loss=1.0956  val_loss=1.1096  val_dice=0.0130  lr=1.06e-04
+1408.8s 570 [fold3-seed42-DirectUNet] epoch 20/30  train_loss=1.0965  val_loss=1.1132  val_dice=0.0132  lr=9.11e-05 *
+1410.6s 571 [fold3-seed42-DirectUNet] epoch 21/30  train_loss=1.0937  val_loss=1.0891  val_dice=0.0147  lr=7.73e-05 *
+1412.3s 572 [fold3-seed42-DirectUNet] epoch 22/30  train_loss=1.0919  val_loss=1.0959  val_dice=0.0148  lr=6.42e-05 *
+1414.1s 573 [fold3-seed42-DirectUNet] epoch 23/30  train_loss=1.0895  val_loss=1.0829  val_dice=0.0153  lr=5.21e-05 *
+1415.8s 574 [fold3-seed42-DirectUNet] epoch 24/30  train_loss=1.0890  val_loss=1.0852  val_dice=0.0147  lr=4.11e-05
+1417.6s 575 [fold3-seed42-DirectUNet] epoch 25/30  train_loss=1.0866  val_loss=1.1104  val_dice=0.0162  lr=3.14e-05 *
+1419.3s 576 [fold3-seed42-DirectUNet] epoch 26/30  train_loss=1.0847  val_loss=1.0993  val_dice=0.0161  lr=2.29e-05
+1421.0s 577 [fold3-seed42-DirectUNet] epoch 27/30  train_loss=1.0864  val_loss=1.1125  val_dice=0.0159  lr=1.58e-05
+1422.8s 578 [fold3-seed42-DirectUNet] epoch 28/30  train_loss=1.0845  val_loss=1.0963  val_dice=0.0155  lr=1.03e-05
+1424.5s 579 [fold3-seed42-DirectUNet] epoch 29/30  train_loss=1.0862  val_loss=1.0998  val_dice=0.0157  lr=6.25e-06
+1426.0s 580 [fold3-seed42-DirectUNet] epoch 30/30  train_loss=1.0844  val_loss=1.0969  val_dice=0.0156  lr=3.81e-06
+1427.1s 581 [checkpoint] saved fold 3 seed 42 result -> outputs/kfold_checkpoint_direct_unet.csv
+1427.1s 582 
+1427.1s 583 ===== Fold 3/5  |  seed 43 (2/5) =====
+1429.6s 584 [fold3-seed43-DirectUNet] epoch 01/30  train_loss=1.3783  val_loss=1.3314  val_dice=0.0050  lr=3.00e-04 *
+1431.3s 585 [fold3-seed43-DirectUNet] epoch 02/30  train_loss=1.1507  val_loss=1.1754  val_dice=0.0105  lr=2.99e-04 *
+1433.0s 586 [fold3-seed43-DirectUNet] epoch 03/30  train_loss=1.1371  val_loss=1.1852  val_dice=0.0104  lr=2.97e-04
+1434.7s 587 [fold3-seed43-DirectUNet] epoch 04/30  train_loss=1.1323  val_loss=1.1635  val_dice=0.0107  lr=2.93e-04 *
+1436.5s 588 [fold3-seed43-DirectUNet] epoch 05/30  train_loss=1.1277  val_loss=1.1530  val_dice=0.0115  lr=2.87e-04 *
+1438.1s 589 [fold3-seed43-DirectUNet] epoch 06/30  train_loss=1.1270  val_loss=1.1613  val_dice=0.0111  lr=2.80e-04
+1439.8s 590 [fold3-seed43-DirectUNet] epoch 07/30  train_loss=1.1269  val_loss=1.2150  val_dice=0.0124  lr=2.72e-04 *
+1441.4s 591 [fold3-seed43-DirectUNet] epoch 08/30  train_loss=1.1212  val_loss=1.1592  val_dice=0.0117  lr=2.62e-04
+1443.1s 592 [fold3-seed43-DirectUNet] epoch 09/30  train_loss=1.1196  val_loss=1.1532  val_dice=0.0123  lr=2.51e-04
+1444.8s 593 [fold3-seed43-DirectUNet] epoch 10/30  train_loss=1.1181  val_loss=1.1536  val_dice=0.0120  lr=2.39e-04
+1446.5s 594 [fold3-seed43-DirectUNet] epoch 11/30  train_loss=1.1176  val_loss=1.1570  val_dice=0.0125  lr=2.26e-04 *
+1448.1s 595 [fold3-seed43-DirectUNet] epoch 12/30  train_loss=1.1173  val_loss=1.1781  val_dice=0.0122  lr=2.12e-04
+1449.8s 596 [fold3-seed43-DirectUNet] epoch 13/30  train_loss=1.1163  val_loss=1.1709  val_dice=0.0131  lr=1.97e-04 *
+1451.4s 597 [fold3-seed43-DirectUNet] epoch 14/30  train_loss=1.1151  val_loss=1.1545  val_dice=0.0130  lr=1.82e-04
+1453.1s 598 [fold3-seed43-DirectUNet] epoch 15/30  train_loss=1.1123  val_loss=1.1502  val_dice=0.0132  lr=1.67e-04 *
+1454.7s 599 [fold3-seed43-DirectUNet] epoch 16/30  train_loss=1.1107  val_loss=1.1427  val_dice=0.0145  lr=1.51e-04 *
+1456.4s 600 [fold3-seed43-DirectUNet] epoch 17/30  train_loss=1.1060  val_loss=1.1538  val_dice=0.0132  lr=1.36e-04
+1458.1s 601 [fold3-seed43-DirectUNet] epoch 18/30  train_loss=1.1070  val_loss=1.1526  val_dice=0.0137  lr=1.21e-04
+1459.7s 602 [fold3-seed43-DirectUNet] epoch 19/30  train_loss=1.1003  val_loss=1.1602  val_dice=0.0143  lr=1.06e-04
+1461.4s 603 [fold3-seed43-DirectUNet] epoch 20/30  train_loss=1.1018  val_loss=1.1535  val_dice=0.0147  lr=9.11e-05 *
+1463.0s 604 [fold3-seed43-DirectUNet] epoch 21/30  train_loss=1.0962  val_loss=1.1564  val_dice=0.0157  lr=7.73e-05 *
+1464.7s 605 [fold3-seed43-DirectUNet] epoch 22/30  train_loss=1.0947  val_loss=1.1421  val_dice=0.0151  lr=6.42e-05
+1466.3s 606 [fold3-seed43-DirectUNet] epoch 23/30  train_loss=1.0944  val_loss=1.1519  val_dice=0.0159  lr=5.21e-05 *
+1468.0s 607 [fold3-seed43-DirectUNet] epoch 24/30  train_loss=1.0922  val_loss=1.1584  val_dice=0.0168  lr=4.11e-05 *
+1469.6s 608 [fold3-seed43-DirectUNet] epoch 25/30  train_loss=1.0913  val_loss=1.1634  val_dice=0.0174  lr=3.14e-05 *
+1471.3s 609 [fold3-seed43-DirectUNet] epoch 26/30  train_loss=1.0890  val_loss=1.1481  val_dice=0.0168  lr=2.29e-05
+1472.9s 610 [fold3-seed43-DirectUNet] epoch 27/30  train_loss=1.0900  val_loss=1.1557  val_dice=0.0171  lr=1.58e-05
+1474.6s 611 [fold3-seed43-DirectUNet] epoch 28/30  train_loss=1.0866  val_loss=1.1540  val_dice=0.0173  lr=1.03e-05
+1476.2s 612 [fold3-seed43-DirectUNet] epoch 29/30  train_loss=1.0867  val_loss=1.1520  val_dice=0.0171  lr=6.25e-06
+1477.9s 613 [fold3-seed43-DirectUNet] epoch 30/30  train_loss=1.0878  val_loss=1.1496  val_dice=0.0171  lr=3.81e-06
+1478.7s 614 [checkpoint] saved fold 3 seed 43 result -> outputs/kfold_checkpoint_direct_unet.csv
+1478.7s 615 
+1478.7s 616 ===== Fold 3/5  |  seed 44 (3/5) =====
+1481.2s 617 [fold3-seed44-DirectUNet] epoch 01/30  train_loss=1.3624  val_loss=1.1471  val_dice=0.0019  lr=3.00e-04 *
+1482.9s 618 [fold3-seed44-DirectUNet] epoch 02/30  train_loss=1.1787  val_loss=1.0819  val_dice=0.0031  lr=2.99e-04 *
+1484.6s 619 [fold3-seed44-DirectUNet] epoch 03/30  train_loss=1.1591  val_loss=1.0955  val_dice=0.0026  lr=2.97e-04
+1486.3s 620 [fold3-seed44-DirectUNet] epoch 04/30  train_loss=1.1466  val_loss=1.0764  val_dice=0.0029  lr=2.93e-04
+1488.0s 621 [fold3-seed44-DirectUNet] epoch 05/30  train_loss=1.1430  val_loss=1.0935  val_dice=0.0027  lr=2.87e-04
+1489.6s 622 [fold3-seed44-DirectUNet] epoch 06/30  train_loss=1.1396  val_loss=1.1160  val_dice=0.0025  lr=2.80e-04
+1491.3s 623 [fold3-seed44-DirectUNet] epoch 07/30  train_loss=1.1369  val_loss=1.0815  val_dice=0.0025  lr=2.72e-04
+1493.0s 624 [fold3-seed44-DirectUNet] epoch 08/30  train_loss=1.1362  val_loss=1.0785  val_dice=0.0026  lr=2.62e-04
+1493.0s 625 [fold3-seed44-DirectUNet] early stopping at epoch 8 (no improvement for 6 epochs; best was epoch 2)
+1493.8s 626 [checkpoint] saved fold 3 seed 44 result -> outputs/kfold_checkpoint_direct_unet.csv
+1493.8s 627 
+1493.8s 628 ===== Fold 3/5  |  seed 45 (4/5) =====
+1496.3s 629 [fold3-seed45-DirectUNet] epoch 01/30  train_loss=1.3466  val_loss=1.2796  val_dice=0.0067  lr=3.00e-04 *
+1498.0s 630 [fold3-seed45-DirectUNet] epoch 02/30  train_loss=1.1464  val_loss=1.1669  val_dice=0.0083  lr=2.99e-04 *
+1499.7s 631 [fold3-seed45-DirectUNet] epoch 03/30  train_loss=1.1359  val_loss=1.1829  val_dice=0.0080  lr=2.97e-04
+1501.4s 632 [fold3-seed45-DirectUNet] epoch 04/30  train_loss=1.1343  val_loss=1.1652  val_dice=0.0091  lr=2.93e-04 *
+1503.1s 633 [fold3-seed45-DirectUNet] epoch 05/30  train_loss=1.1310  val_loss=1.1629  val_dice=0.0093  lr=2.87e-04 *
+1504.8s 634 [fold3-seed45-DirectUNet] epoch 06/30  train_loss=1.1243  val_loss=1.1488  val_dice=0.0098  lr=2.80e-04 *
+1506.5s 635 [fold3-seed45-DirectUNet] epoch 07/30  train_loss=1.1262  val_loss=1.1651  val_dice=0.0093  lr=2.72e-04
+1508.2s 636 [fold3-seed45-DirectUNet] epoch 08/30  train_loss=1.1228  val_loss=1.1552  val_dice=0.0097  lr=2.62e-04
+1509.9s 637 [fold3-seed45-DirectUNet] epoch 09/30  train_loss=1.1222  val_loss=1.1500  val_dice=0.0093  lr=2.51e-04
+1511.6s 638 [fold3-seed45-DirectUNet] epoch 10/30  train_loss=1.1200  val_loss=1.1591  val_dice=0.0099  lr=2.39e-04 *
+1513.3s 639 [fold3-seed45-DirectUNet] epoch 11/30  train_loss=1.1200  val_loss=1.1528  val_dice=0.0102  lr=2.26e-04 *
+1515.0s 640 [fold3-seed45-DirectUNet] epoch 12/30  train_loss=1.1161  val_loss=1.1446  val_dice=0.0106  lr=2.12e-04 *
+1516.7s 641 [fold3-seed45-DirectUNet] epoch 13/30  train_loss=1.1149  val_loss=1.1510  val_dice=0.0103  lr=1.97e-04
+1518.3s 642 [fold3-seed45-DirectUNet] epoch 14/30  train_loss=1.1131  val_loss=1.1411  val_dice=0.0109  lr=1.82e-04 *
+1520.0s 643 [fold3-seed45-DirectUNet] epoch 15/30  train_loss=1.1125  val_loss=1.1533  val_dice=0.0117  lr=1.67e-04 *
+1521.7s 644 [fold3-seed45-DirectUNet] epoch 16/30  train_loss=1.1086  val_loss=1.1789  val_dice=0.0123  lr=1.51e-04 *
+1523.4s 645 [fold3-seed45-DirectUNet] epoch 17/30  train_loss=1.1099  val_loss=1.1327  val_dice=0.0126  lr=1.36e-04 *
+1525.1s 646 [fold3-seed45-DirectUNet] epoch 18/30  train_loss=1.1020  val_loss=1.1446  val_dice=0.0143  lr=1.21e-04 *
+1526.8s 647 [fold3-seed45-DirectUNet] epoch 19/30  train_loss=1.1029  val_loss=1.1583  val_dice=0.0150  lr=1.06e-04 *
+1528.5s 648 [fold3-seed45-DirectUNet] epoch 20/30  train_loss=1.1005  val_loss=1.1376  val_dice=0.0158  lr=9.11e-05 *
+1530.1s 649 [fold3-seed45-DirectUNet] epoch 21/30  train_loss=1.0955  val_loss=1.1613  val_dice=0.0164  lr=7.73e-05 *
+1531.8s 650 [fold3-seed45-DirectUNet] epoch 22/30  train_loss=1.0939  val_loss=1.1340  val_dice=0.0165  lr=6.42e-05 *
+1533.5s 651 [fold3-seed45-DirectUNet] epoch 23/30  train_loss=1.0943  val_loss=1.1303  val_dice=0.0171  lr=5.21e-05 *
+1535.2s 652 [fold3-seed45-DirectUNet] epoch 24/30  train_loss=1.0915  val_loss=1.1339  val_dice=0.0173  lr=4.11e-05 *
+1536.8s 653 [fold3-seed45-DirectUNet] epoch 25/30  train_loss=1.0901  val_loss=1.1261  val_dice=0.0176  lr=3.14e-05 *
+1538.5s 654 [fold3-seed45-DirectUNet] epoch 26/30  train_loss=1.0886  val_loss=1.1368  val_dice=0.0184  lr=2.29e-05 *
+1540.2s 655 [fold3-seed45-DirectUNet] epoch 27/30  train_loss=1.0900  val_loss=1.1410  val_dice=0.0182  lr=1.58e-05
+1541.8s 656 [fold3-seed45-DirectUNet] epoch 28/30  train_loss=1.0883  val_loss=1.1377  val_dice=0.0179  lr=1.03e-05
+1543.5s 657 [fold3-seed45-DirectUNet] epoch 29/30  train_loss=1.0854  val_loss=1.1371  val_dice=0.0183  lr=6.25e-06
+1545.2s 658 [fold3-seed45-DirectUNet] epoch 30/30  train_loss=1.0887  val_loss=1.1360  val_dice=0.0182  lr=3.81e-06
+1546.0s 659 [checkpoint] saved fold 3 seed 45 result -> outputs/kfold_checkpoint_direct_unet.csv
+1546.0s 660 
+1546.0s 661 ===== Fold 3/5  |  seed 46 (5/5) =====
+1548.4s 662 [fold3-seed46-DirectUNet] epoch 01/30  train_loss=1.3189  val_loss=1.1235  val_dice=0.0030  lr=3.00e-04 *
+1550.1s 663 [fold3-seed46-DirectUNet] epoch 02/30  train_loss=1.1581  val_loss=1.0908  val_dice=0.0044  lr=2.99e-04 *
+1551.8s 664 [fold3-seed46-DirectUNet] epoch 03/30  train_loss=1.1504  val_loss=1.0897  val_dice=0.0048  lr=2.97e-04 *
+1553.4s 665 [fold3-seed46-DirectUNet] epoch 04/30  train_loss=1.1450  val_loss=1.0955  val_dice=0.0041  lr=2.93e-04
+1555.1s 666 [fold3-seed46-DirectUNet] epoch 05/30  train_loss=1.1375  val_loss=1.0985  val_dice=0.0038  lr=2.87e-04
+1556.8s 667 [fold3-seed46-DirectUNet] epoch 06/30  train_loss=1.1390  val_loss=1.0925  val_dice=0.0040  lr=2.80e-04
+1558.4s 668 [fold3-seed46-DirectUNet] epoch 07/30  train_loss=1.1356  val_loss=1.0819  val_dice=0.0050  lr=2.72e-04 *
+1560.1s 669 [fold3-seed46-DirectUNet] epoch 08/30  train_loss=1.1321  val_loss=1.0796  val_dice=0.0051  lr=2.62e-04 *
+1561.8s 670 [fold3-seed46-DirectUNet] epoch 09/30  train_loss=1.1266  val_loss=1.0852  val_dice=0.0055  lr=2.51e-04 *
+1563.5s 671 [fold3-seed46-DirectUNet] epoch 10/30  train_loss=1.1277  val_loss=1.1164  val_dice=0.0026  lr=2.39e-04
+1565.1s 672 [fold3-seed46-DirectUNet] epoch 11/30  train_loss=1.1222  val_loss=1.0781  val_dice=0.0053  lr=2.26e-04
+1566.8s 673 [fold3-seed46-DirectUNet] epoch 12/30  train_loss=1.1207  val_loss=1.0742  val_dice=0.0058  lr=2.12e-04 *
+1568.5s 674 [fold3-seed46-DirectUNet] epoch 13/30  train_loss=1.1130  val_loss=1.0667  val_dice=0.0066  lr=1.97e-04 *
+1570.2s 675 [fold3-seed46-DirectUNet] epoch 14/30  train_loss=1.1121  val_loss=1.0702  val_dice=0.0065  lr=1.82e-04
+1571.8s 676 [fold3-seed46-DirectUNet] epoch 15/30  train_loss=1.1088  val_loss=1.0696  val_dice=0.0064  lr=1.67e-04
+1573.5s 677 [fold3-seed46-DirectUNet] epoch 16/30  train_loss=1.1052  val_loss=1.0763  val_dice=0.0071  lr=1.51e-04 *
+1575.1s 678 [fold3-seed46-DirectUNet] epoch 17/30  train_loss=1.1028  val_loss=1.0635  val_dice=0.0075  lr=1.36e-04 *
+1576.8s 679 [fold3-seed46-DirectUNet] epoch 18/30  train_loss=1.1008  val_loss=1.0628  val_dice=0.0078  lr=1.21e-04 *
+1578.5s 680 [fold3-seed46-DirectUNet] epoch 19/30  train_loss=1.1003  val_loss=1.0611  val_dice=0.0082  lr=1.06e-04 *
+1580.2s 681 [fold3-seed46-DirectUNet] epoch 20/30  train_loss=1.0989  val_loss=1.0666  val_dice=0.0087  lr=9.11e-05 *
+1581.9s 682 [fold3-seed46-DirectUNet] epoch 21/30  train_loss=1.0950  val_loss=1.0618  val_dice=0.0085  lr=7.73e-05
+1583.5s 683 [fold3-seed46-DirectUNet] epoch 22/30  train_loss=1.0970  val_loss=1.0629  val_dice=0.0093  lr=6.42e-05 *
+1585.2s 684 [fold3-seed46-DirectUNet] epoch 23/30  train_loss=1.0928  val_loss=1.0629  val_dice=0.0085  lr=5.21e-05
+1586.9s 685 [fold3-seed46-DirectUNet] epoch 24/30  train_loss=1.0906  val_loss=1.0778  val_dice=0.0092  lr=4.11e-05
+1588.6s 686 [fold3-seed46-DirectUNet] epoch 25/30  train_loss=1.0901  val_loss=1.0654  val_dice=0.0084  lr=3.14e-05
+1590.3s 687 [fold3-seed46-DirectUNet] epoch 26/30  train_loss=1.0896  val_loss=1.0666  val_dice=0.0089  lr=2.29e-05
+1591.9s 688 [fold3-seed46-DirectUNet] epoch 27/30  train_loss=1.0900  val_loss=1.0644  val_dice=0.0086  lr=1.58e-05
+1593.6s 689 [fold3-seed46-DirectUNet] epoch 28/30  train_loss=1.0892  val_loss=1.0648  val_dice=0.0089  lr=1.03e-05
+1593.6s 690 [fold3-seed46-DirectUNet] early stopping at epoch 28 (no improvement for 6 epochs; best was epoch 22)
+1594.5s 691 [checkpoint] saved fold 3 seed 46 result -> outputs/kfold_checkpoint_direct_unet.csv
+1594.5s 692 
+1594.5s 693 [kfold-direct] fold 4/5: loading 16 train/val + 4 test patient(s) into cache...
+1705.4s 694 [SliceCache] loaded + precomputed 16 patient(s), 689 usable slice(s).
+1735.0s 695 [SliceCache] loaded + precomputed 4 patient(s), 172 usable slice(s).
+1735.0s 696 
+1735.0s 697 ===== Fold 4/5  |  seed 42 (1/5) =====
+1737.6s 698 [fold4-seed42-DirectUNet] epoch 01/30  train_loss=1.3478  val_loss=1.3088  val_dice=0.0111  lr=3.00e-04 *
+1739.2s 699 [fold4-seed42-DirectUNet] epoch 02/30  train_loss=1.1743  val_loss=1.4625  val_dice=0.0114  lr=2.99e-04 *
+1740.9s 700 [fold4-seed42-DirectUNet] epoch 03/30  train_loss=1.1697  val_loss=1.2351  val_dice=0.0137  lr=2.97e-04 *
+1742.5s 701 [fold4-seed42-DirectUNet] epoch 04/30  train_loss=1.1600  val_loss=1.2330  val_dice=0.0147  lr=2.93e-04 *
+1744.2s 702 [fold4-seed42-DirectUNet] epoch 05/30  train_loss=1.1585  val_loss=1.2353  val_dice=0.0168  lr=2.87e-04 *
+1745.9s 703 [fold4-seed42-DirectUNet] epoch 06/30  train_loss=1.1565  val_loss=1.3542  val_dice=0.0160  lr=2.80e-04
+1747.5s 704 [fold4-seed42-DirectUNet] epoch 07/30  train_loss=1.1541  val_loss=1.2219  val_dice=0.0164  lr=2.72e-04
+1749.2s 705 [fold4-seed42-DirectUNet] epoch 08/30  train_loss=1.1499  val_loss=1.2649  val_dice=0.0167  lr=2.62e-04
+1750.8s 706 [fold4-seed42-DirectUNet] epoch 09/30  train_loss=1.1483  val_loss=1.4002  val_dice=0.0142  lr=2.51e-04
+1752.5s 707 [fold4-seed42-DirectUNet] epoch 10/30  train_loss=1.1424  val_loss=1.2114  val_dice=0.0162  lr=2.39e-04
+1754.2s 708 [fold4-seed42-DirectUNet] epoch 11/30  train_loss=1.1349  val_loss=1.2116  val_dice=0.0175  lr=2.26e-04 *
+1755.9s 709 [fold4-seed42-DirectUNet] epoch 12/30  train_loss=1.1324  val_loss=1.2167  val_dice=0.0187  lr=2.12e-04 *
+1757.6s 710 [fold4-seed42-DirectUNet] epoch 13/30  train_loss=1.1314  val_loss=1.2133  val_dice=0.0183  lr=1.97e-04
+1759.3s 711 [fold4-seed42-DirectUNet] epoch 14/30  train_loss=1.1291  val_loss=1.2217  val_dice=0.0198  lr=1.82e-04 *
+1761.1s 712 [fold4-seed42-DirectUNet] epoch 15/30  train_loss=1.1264  val_loss=1.2057  val_dice=0.0183  lr=1.67e-04
+1762.8s 713 [fold4-seed42-DirectUNet] epoch 16/30  train_loss=1.1200  val_loss=1.2146  val_dice=0.0196  lr=1.51e-04
+1764.5s 714 [fold4-seed42-DirectUNet] epoch 17/30  train_loss=1.1227  val_loss=1.2087  val_dice=0.0202  lr=1.36e-04 *
+1766.2s 715 [fold4-seed42-DirectUNet] epoch 18/30  train_loss=1.1170  val_loss=1.2186  val_dice=0.0197  lr=1.21e-04
+1768.0s 716 [fold4-seed42-DirectUNet] epoch 19/30  train_loss=1.1155  val_loss=1.2160  val_dice=0.0204  lr=1.06e-04 *
+1769.7s 717 [fold4-seed42-DirectUNet] epoch 20/30  train_loss=1.1116  val_loss=1.2023  val_dice=0.0207  lr=9.11e-05 *
+1771.4s 718 [fold4-seed42-DirectUNet] epoch 21/30  train_loss=1.1127  val_loss=1.2316  val_dice=0.0206  lr=7.73e-05
+1773.2s 719 [fold4-seed42-DirectUNet] epoch 22/30  train_loss=1.1107  val_loss=1.2147  val_dice=0.0204  lr=6.42e-05
+1774.9s 720 [fold4-seed42-DirectUNet] epoch 23/30  train_loss=1.1071  val_loss=1.2139  val_dice=0.0196  lr=5.21e-05
+1776.7s 721 [fold4-seed42-DirectUNet] epoch 24/30  train_loss=1.1094  val_loss=1.2174  val_dice=0.0209  lr=4.11e-05 *
+1778.4s 722 [fold4-seed42-DirectUNet] epoch 25/30  train_loss=1.1088  val_loss=1.2118  val_dice=0.0208  lr=3.14e-05
+1780.2s 723 [fold4-seed42-DirectUNet] epoch 26/30  train_loss=1.1048  val_loss=1.2355  val_dice=0.0213  lr=2.29e-05 *
+1781.9s 724 [fold4-seed42-DirectUNet] epoch 27/30  train_loss=1.1043  val_loss=1.2344  val_dice=0.0213  lr=1.58e-05
+1783.6s 725 [fold4-seed42-DirectUNet] epoch 28/30  train_loss=1.1038  val_loss=1.2311  val_dice=0.0210  lr=1.03e-05
+1785.3s 726 [fold4-seed42-DirectUNet] epoch 29/30  train_loss=1.1024  val_loss=1.2253  val_dice=0.0207  lr=6.25e-06
+1786.8s 727 [fold4-seed42-DirectUNet] epoch 30/30  train_loss=1.1018  val_loss=1.2363  val_dice=0.0211  lr=3.81e-06
+1788.0s 728 [checkpoint] saved fold 4 seed 42 result -> outputs/kfold_checkpoint_direct_unet.csv
+1788.0s 729 
+1788.0s 730 ===== Fold 4/5  |  seed 43 (2/5) =====
+1790.5s 731 [fold4-seed43-DirectUNet] epoch 01/30  train_loss=1.4318  val_loss=1.1828  val_dice=0.0015  lr=3.00e-04 *
+1792.2s 732 [fold4-seed43-DirectUNet] epoch 02/30  train_loss=1.1998  val_loss=1.1228  val_dice=0.0023  lr=2.99e-04 *
+1793.9s 733 [fold4-seed43-DirectUNet] epoch 03/30  train_loss=1.1888  val_loss=1.1010  val_dice=0.0022  lr=2.97e-04
+1795.6s 734 [fold4-seed43-DirectUNet] epoch 04/30  train_loss=1.1790  val_loss=1.0734  val_dice=0.0025  lr=2.93e-04 *
+1797.3s 735 [fold4-seed43-DirectUNet] epoch 05/30  train_loss=1.1776  val_loss=1.0748  val_dice=0.0027  lr=2.87e-04 *
+1799.0s 736 [fold4-seed43-DirectUNet] epoch 06/30  train_loss=1.1798  val_loss=1.0736  val_dice=0.0025  lr=2.80e-04
+1800.6s 737 [fold4-seed43-DirectUNet] epoch 07/30  train_loss=1.1722  val_loss=1.1168  val_dice=0.0022  lr=2.72e-04
+1802.3s 738 [fold4-seed43-DirectUNet] epoch 08/30  train_loss=1.1703  val_loss=1.0899  val_dice=0.0025  lr=2.62e-04
+1804.0s 739 [fold4-seed43-DirectUNet] epoch 09/30  train_loss=1.1663  val_loss=1.0937  val_dice=0.0025  lr=2.51e-04
+1805.6s 740 [fold4-seed43-DirectUNet] epoch 10/30  train_loss=1.1633  val_loss=1.0830  val_dice=0.0025  lr=2.39e-04
+1807.3s 741 [fold4-seed43-DirectUNet] epoch 11/30  train_loss=1.1614  val_loss=1.0934  val_dice=0.0024  lr=2.26e-04
+1807.3s 742 [fold4-seed43-DirectUNet] early stopping at epoch 11 (no improvement for 6 epochs; best was epoch 5)
+1808.2s 743 [checkpoint] saved fold 4 seed 43 result -> outputs/kfold_checkpoint_direct_unet.csv
+1808.2s 744 
+1808.2s 745 ===== Fold 4/5  |  seed 44 (3/5) =====
+1810.6s 746 [fold4-seed44-DirectUNet] epoch 01/30  train_loss=1.3901  val_loss=1.3931  val_dice=0.0177  lr=3.00e-04 *
+1812.3s 747 [fold4-seed44-DirectUNet] epoch 02/30  train_loss=1.1960  val_loss=1.2958  val_dice=0.0210  lr=2.99e-04 *
+1814.0s 748 [fold4-seed44-DirectUNet] epoch 03/30  train_loss=1.1731  val_loss=1.3280  val_dice=0.0225  lr=2.97e-04 *
+1815.6s 749 [fold4-seed44-DirectUNet] epoch 04/30  train_loss=1.1675  val_loss=1.2332  val_dice=0.0219  lr=2.93e-04
+1817.3s 750 [fold4-seed44-DirectUNet] epoch 05/30  train_loss=1.1629  val_loss=1.2265  val_dice=0.0228  lr=2.87e-04 *
+1819.0s 751 [fold4-seed44-DirectUNet] epoch 06/30  train_loss=1.1606  val_loss=1.2190  val_dice=0.0223  lr=2.80e-04
+1820.7s 752 [fold4-seed44-DirectUNet] epoch 07/30  train_loss=1.1579  val_loss=1.3299  val_dice=0.0248  lr=2.72e-04 *
+1822.3s 753 [fold4-seed44-DirectUNet] epoch 08/30  train_loss=1.1517  val_loss=1.2438  val_dice=0.0252  lr=2.62e-04 *
+1824.0s 754 [fold4-seed44-DirectUNet] epoch 09/30  train_loss=1.1497  val_loss=1.2775  val_dice=0.0241  lr=2.51e-04
+1825.6s 755 [fold4-seed44-DirectUNet] epoch 10/30  train_loss=1.1459  val_loss=1.2876  val_dice=0.0269  lr=2.39e-04 *
+1827.3s 756 [fold4-seed44-DirectUNet] epoch 11/30  train_loss=1.1434  val_loss=1.2231  val_dice=0.0256  lr=2.26e-04
+1828.9s 757 [fold4-seed44-DirectUNet] epoch 12/30  train_loss=1.1374  val_loss=1.2316  val_dice=0.0254  lr=2.12e-04
+1830.6s 758 [fold4-seed44-DirectUNet] epoch 13/30  train_loss=1.1325  val_loss=1.2464  val_dice=0.0278  lr=1.97e-04 *
+1832.2s 759 [fold4-seed44-DirectUNet] epoch 14/30  train_loss=1.1298  val_loss=1.2270  val_dice=0.0284  lr=1.82e-04 *
+1833.9s 760 [fold4-seed44-DirectUNet] epoch 15/30  train_loss=1.1293  val_loss=1.3508  val_dice=0.0262  lr=1.67e-04
+1835.6s 761 [fold4-seed44-DirectUNet] epoch 16/30  train_loss=1.1240  val_loss=1.2617  val_dice=0.0286  lr=1.51e-04 *
+1837.2s 762 [fold4-seed44-DirectUNet] epoch 17/30  train_loss=1.1238  val_loss=1.4031  val_dice=0.0264  lr=1.36e-04
+1838.9s 763 [fold4-seed44-DirectUNet] epoch 18/30  train_loss=1.1218  val_loss=1.2884  val_dice=0.0311  lr=1.21e-04 *
+1840.6s 764 [fold4-seed44-DirectUNet] epoch 19/30  train_loss=1.1174  val_loss=1.4061  val_dice=0.0271  lr=1.06e-04
+1842.2s 765 [fold4-seed44-DirectUNet] epoch 20/30  train_loss=1.1182  val_loss=1.4357  val_dice=0.0271  lr=9.11e-05
+1843.9s 766 [fold4-seed44-DirectUNet] epoch 21/30  train_loss=1.1160  val_loss=1.3772  val_dice=0.0292  lr=7.73e-05
+1845.6s 767 [fold4-seed44-DirectUNet] epoch 22/30  train_loss=1.1115  val_loss=1.4445  val_dice=0.0270  lr=6.42e-05
+1847.2s 768 [fold4-seed44-DirectUNet] epoch 23/30  train_loss=1.1120  val_loss=1.2717  val_dice=0.0313  lr=5.21e-05 *
+1848.9s 769 [fold4-seed44-DirectUNet] epoch 24/30  train_loss=1.1114  val_loss=1.3773  val_dice=0.0295  lr=4.11e-05
+1850.6s 770 [fold4-seed44-DirectUNet] epoch 25/30  train_loss=1.1108  val_loss=1.3867  val_dice=0.0291  lr=3.14e-05
+1852.3s 771 [fold4-seed44-DirectUNet] epoch 26/30  train_loss=1.1093  val_loss=1.3071  val_dice=0.0309  lr=2.29e-05
+1854.0s 772 [fold4-seed44-DirectUNet] epoch 27/30  train_loss=1.1089  val_loss=1.3648  val_dice=0.0297  lr=1.58e-05
+1855.7s 773 [fold4-seed44-DirectUNet] epoch 28/30  train_loss=1.1078  val_loss=1.3440  val_dice=0.0306  lr=1.03e-05
+1857.3s 774 [fold4-seed44-DirectUNet] epoch 29/30  train_loss=1.1067  val_loss=1.3727  val_dice=0.0296  lr=6.25e-06
+1857.3s 775 [fold4-seed44-DirectUNet] early stopping at epoch 29 (no improvement for 6 epochs; best was epoch 23)
+1858.2s 776 [checkpoint] saved fold 4 seed 44 result -> outputs/kfold_checkpoint_direct_unet.csv
+1858.2s 777 
+1858.2s 778 ===== Fold 4/5  |  seed 45 (4/5) =====
+1860.8s 779 [fold4-seed45-DirectUNet] epoch 01/30  train_loss=1.3778  val_loss=1.2536  val_dice=0.0145  lr=3.00e-04 *
+1862.4s 780 [fold4-seed45-DirectUNet] epoch 02/30  train_loss=1.1771  val_loss=1.2541  val_dice=0.0143  lr=2.99e-04
+1864.1s 781 [fold4-seed45-DirectUNet] epoch 03/30  train_loss=1.1676  val_loss=1.4430  val_dice=0.0121  lr=2.97e-04
+1865.8s 782 [fold4-seed45-DirectUNet] epoch 04/30  train_loss=1.1653  val_loss=1.3374  val_dice=0.0130  lr=2.93e-04
+1867.5s 783 [fold4-seed45-DirectUNet] epoch 05/30  train_loss=1.1618  val_loss=1.2425  val_dice=0.0159  lr=2.87e-04 *
+1869.2s 784 [fold4-seed45-DirectUNet] epoch 06/30  train_loss=1.1587  val_loss=1.2175  val_dice=0.0154  lr=2.80e-04
+1870.9s 785 [fold4-seed45-DirectUNet] epoch 07/30  train_loss=1.1553  val_loss=1.2811  val_dice=0.0153  lr=2.72e-04
+1872.6s 786 [fold4-seed45-DirectUNet] epoch 08/30  train_loss=1.1532  val_loss=1.2510  val_dice=0.0183  lr=2.62e-04 *
+1874.3s 787 [fold4-seed45-DirectUNet] epoch 09/30  train_loss=1.1500  val_loss=1.2117  val_dice=0.0169  lr=2.51e-04
+1876.0s 788 [fold4-seed45-DirectUNet] epoch 10/30  train_loss=1.1444  val_loss=1.2130  val_dice=0.0193  lr=2.39e-04 *
+1877.7s 789 [fold4-seed45-DirectUNet] epoch 11/30  train_loss=1.1410  val_loss=1.2506  val_dice=0.0188  lr=2.26e-04
+1879.4s 790 [fold4-seed45-DirectUNet] epoch 12/30  train_loss=1.1348  val_loss=1.2699  val_dice=0.0213  lr=2.12e-04 *
+1881.1s 791 [fold4-seed45-DirectUNet] epoch 13/30  train_loss=1.1315  val_loss=1.2358  val_dice=0.0212  lr=1.97e-04
+1882.8s 792 [fold4-seed45-DirectUNet] epoch 14/30  train_loss=1.1313  val_loss=1.2418  val_dice=0.0220  lr=1.82e-04 *
+1884.4s 793 [fold4-seed45-DirectUNet] epoch 15/30  train_loss=1.1320  val_loss=1.2424  val_dice=0.0176  lr=1.67e-04
+1886.1s 794 [fold4-seed45-DirectUNet] epoch 16/30  train_loss=1.1259  val_loss=1.2512  val_dice=0.0232  lr=1.51e-04 *
+1887.8s 795 [fold4-seed45-DirectUNet] epoch 17/30  train_loss=1.1252  val_loss=1.2426  val_dice=0.0224  lr=1.36e-04
+1889.5s 796 [fold4-seed45-DirectUNet] epoch 18/30  train_loss=1.1216  val_loss=1.2351  val_dice=0.0212  lr=1.21e-04
+1891.3s 797 [fold4-seed45-DirectUNet] epoch 19/30  train_loss=1.1223  val_loss=1.2273  val_dice=0.0211  lr=1.06e-04
+1892.9s 798 [fold4-seed45-DirectUNet] epoch 20/30  train_loss=1.1197  val_loss=1.2254  val_dice=0.0212  lr=9.11e-05
+1894.6s 799 [fold4-seed45-DirectUNet] epoch 21/30  train_loss=1.1169  val_loss=1.2510  val_dice=0.0260  lr=7.73e-05 *
+1896.2s 800 [fold4-seed45-DirectUNet] epoch 22/30  train_loss=1.1155  val_loss=1.2408  val_dice=0.0217  lr=6.42e-05
+1897.9s 801 [fold4-seed45-DirectUNet] epoch 23/30  train_loss=1.1152  val_loss=1.2805  val_dice=0.0274  lr=5.21e-05 *
+1899.6s 802 [fold4-seed45-DirectUNet] epoch 24/30  train_loss=1.1149  val_loss=1.2475  val_dice=0.0255  lr=4.11e-05
+1901.3s 803 [fold4-seed45-DirectUNet] epoch 25/30  train_loss=1.1124  val_loss=1.2691  val_dice=0.0279  lr=3.14e-05 *
+1903.0s 804 [fold4-seed45-DirectUNet] epoch 26/30  train_loss=1.1141  val_loss=1.2341  val_dice=0.0239  lr=2.29e-05
+1904.7s 805 [fold4-seed45-DirectUNet] epoch 27/30  train_loss=1.1112  val_loss=1.2576  val_dice=0.0261  lr=1.58e-05
+1906.3s 806 [fold4-seed45-DirectUNet] epoch 28/30  train_loss=1.1100  val_loss=1.2483  val_dice=0.0244  lr=1.03e-05
+1908.0s 807 [fold4-seed45-DirectUNet] epoch 29/30  train_loss=1.1108  val_loss=1.2522  val_dice=0.0249  lr=6.25e-06
+1909.7s 808 [fold4-seed45-DirectUNet] epoch 30/30  train_loss=1.1111  val_loss=1.2550  val_dice=0.0252  lr=3.81e-06
+1910.5s 809 [checkpoint] saved fold 4 seed 45 result -> outputs/kfold_checkpoint_direct_unet.csv
+1910.5s 810 
+1910.5s 811 ===== Fold 4/5  |  seed 46 (5/5) =====
+1913.1s 812 [fold4-seed46-DirectUNet] epoch 01/30  train_loss=1.3500  val_loss=1.2004  val_dice=0.0103  lr=3.00e-04 *
+1914.8s 813 [fold4-seed46-DirectUNet] epoch 02/30  train_loss=1.1897  val_loss=1.1719  val_dice=0.0125  lr=2.99e-04 *
+1916.4s 814 [fold4-seed46-DirectUNet] epoch 03/30  train_loss=1.1778  val_loss=1.1646  val_dice=0.0136  lr=2.97e-04 *
+1918.1s 815 [fold4-seed46-DirectUNet] epoch 04/30  train_loss=1.1777  val_loss=1.1483  val_dice=0.0144  lr=2.93e-04 *
+1919.8s 816 [fold4-seed46-DirectUNet] epoch 05/30  train_loss=1.1690  val_loss=1.1653  val_dice=0.0143  lr=2.87e-04
+1921.5s 817 [fold4-seed46-DirectUNet] epoch 06/30  train_loss=1.1672  val_loss=1.1412  val_dice=0.0168  lr=2.80e-04 *
+1923.2s 818 [fold4-seed46-DirectUNet] epoch 07/30  train_loss=1.1681  val_loss=1.1461  val_dice=0.0161  lr=2.72e-04
+1924.8s 819 [fold4-seed46-DirectUNet] epoch 08/30  train_loss=1.1657  val_loss=1.1407  val_dice=0.0164  lr=2.62e-04
+1926.5s 820 [fold4-seed46-DirectUNet] epoch 09/30  train_loss=1.1619  val_loss=1.1524  val_dice=0.0168  lr=2.51e-04 *
+1928.2s 821 [fold4-seed46-DirectUNet] epoch 10/30  train_loss=1.1575  val_loss=1.1367  val_dice=0.0160  lr=2.39e-04
+1929.8s 822 [fold4-seed46-DirectUNet] epoch 11/30  train_loss=1.1556  val_loss=1.1570  val_dice=0.0191  lr=2.26e-04 *
+1931.5s 823 [fold4-seed46-DirectUNet] epoch 12/30  train_loss=1.1512  val_loss=1.1217  val_dice=0.0191  lr=2.12e-04
+1933.2s 824 [fold4-seed46-DirectUNet] epoch 13/30  train_loss=1.1519  val_loss=1.1266  val_dice=0.0197  lr=1.97e-04 *
+1934.9s 825 [fold4-seed46-DirectUNet] epoch 14/30  train_loss=1.1456  val_loss=1.1316  val_dice=0.0228  lr=1.82e-04 *
+1936.6s 826 [fold4-seed46-DirectUNet] epoch 15/30  train_loss=1.1448  val_loss=1.1161  val_dice=0.0233  lr=1.67e-04 *
+1938.2s 827 [fold4-seed46-DirectUNet] epoch 16/30  train_loss=1.1428  val_loss=1.1120  val_dice=0.0260  lr=1.51e-04 *
+1939.9s 828 [fold4-seed46-DirectUNet] epoch 17/30  train_loss=1.1394  val_loss=1.1072  val_dice=0.0259  lr=1.36e-04
+1941.6s 829 [fold4-seed46-DirectUNet] epoch 18/30  train_loss=1.1394  val_loss=1.1077  val_dice=0.0239  lr=1.21e-04
+1943.3s 830 [fold4-seed46-DirectUNet] epoch 19/30  train_loss=1.1331  val_loss=1.0978  val_dice=0.0258  lr=1.06e-04
+1944.9s 831 [fold4-seed46-DirectUNet] epoch 20/30  train_loss=1.1311  val_loss=1.1057  val_dice=0.0303  lr=9.11e-05 *
+1946.6s 832 [fold4-seed46-DirectUNet] epoch 21/30  train_loss=1.1315  val_loss=1.0959  val_dice=0.0256  lr=7.73e-05
+1948.3s 833 [fold4-seed46-DirectUNet] epoch 22/30  train_loss=1.1327  val_loss=1.0980  val_dice=0.0253  lr=6.42e-05
+1950.0s 834 [fold4-seed46-DirectUNet] epoch 23/30  train_loss=1.1293  val_loss=1.0902  val_dice=0.0285  lr=5.21e-05
+1951.7s 835 [fold4-seed46-DirectUNet] epoch 24/30  train_loss=1.1255  val_loss=1.0943  val_dice=0.0278  lr=4.11e-05
+1953.3s 836 [fold4-seed46-DirectUNet] epoch 25/30  train_loss=1.1256  val_loss=1.0902  val_dice=0.0269  lr=3.14e-05
+1955.0s 837 [fold4-seed46-DirectUNet] epoch 26/30  train_loss=1.1262  val_loss=1.0916  val_dice=0.0291  lr=2.29e-05
+1955.0s 838 [fold4-seed46-DirectUNet] early stopping at epoch 26 (no improvement for 6 epochs; best was epoch 20)
+1955.9s 839 [checkpoint] saved fold 4 seed 46 result -> outputs/kfold_checkpoint_direct_unet.csv
+1955.9s 840 
+1955.9s 841 [kfold-direct] fold 5/5: loading 16 train/val + 4 test patient(s) into cache...
+2068.5s 842 [SliceCache] loaded + precomputed 16 patient(s), 687 usable slice(s).
+2096.7s 843 [SliceCache] loaded + precomputed 4 patient(s), 174 usable slice(s).
+2096.7s 844 
+2096.7s 845 ===== Fold 5/5  |  seed 42 (1/5) =====
+2099.3s 846 [fold5-seed42-DirectUNet] epoch 01/30  train_loss=1.3526  val_loss=1.1713  val_dice=0.0037  lr=3.00e-04 *
+2100.9s 847 [fold5-seed42-DirectUNet] epoch 02/30  train_loss=1.1874  val_loss=1.0988  val_dice=0.0056  lr=2.99e-04 *
+2102.6s 848 [fold5-seed42-DirectUNet] epoch 03/30  train_loss=1.1762  val_loss=1.0960  val_dice=0.0051  lr=2.97e-04
+2104.2s 849 [fold5-seed42-DirectUNet] epoch 04/30  train_loss=1.1714  val_loss=1.1509  val_dice=0.0034  lr=2.93e-04
+2105.9s 850 [fold5-seed42-DirectUNet] epoch 05/30  train_loss=1.1715  val_loss=1.1205  val_dice=0.0047  lr=2.87e-04
+2107.5s 851 [fold5-seed42-DirectUNet] epoch 06/30  train_loss=1.1617  val_loss=1.1047  val_dice=0.0055  lr=2.80e-04
+2109.1s 852 [fold5-seed42-DirectUNet] epoch 07/30  train_loss=1.1607  val_loss=1.1029  val_dice=0.0063  lr=2.72e-04 *
+2110.8s 853 [fold5-seed42-DirectUNet] epoch 08/30  train_loss=1.1595  val_loss=1.1063  val_dice=0.0059  lr=2.62e-04
+2112.5s 854 [fold5-seed42-DirectUNet] epoch 09/30  train_loss=1.1571  val_loss=1.1159  val_dice=0.0058  lr=2.51e-04
+2114.2s 855 [fold5-seed42-DirectUNet] epoch 10/30  train_loss=1.1526  val_loss=1.0880  val_dice=0.0066  lr=2.39e-04 *
+2115.9s 856 [fold5-seed42-DirectUNet] epoch 11/30  train_loss=1.1491  val_loss=1.0763  val_dice=0.0087  lr=2.26e-04 *
+2117.6s 857 [fold5-seed42-DirectUNet] epoch 12/30  train_loss=1.1450  val_loss=1.0771  val_dice=0.0076  lr=2.12e-04
+2119.3s 858 [fold5-seed42-DirectUNet] epoch 13/30  train_loss=1.1446  val_loss=1.0896  val_dice=0.0069  lr=1.97e-04
+2121.0s 859 [fold5-seed42-DirectUNet] epoch 14/30  train_loss=1.1388  val_loss=1.0825  val_dice=0.0071  lr=1.82e-04
+2122.7s 860 [fold5-seed42-DirectUNet] epoch 15/30  train_loss=1.1402  val_loss=1.0856  val_dice=0.0068  lr=1.67e-04
+2124.4s 861 [fold5-seed42-DirectUNet] epoch 16/30  train_loss=1.1408  val_loss=1.0844  val_dice=0.0074  lr=1.51e-04
+2125.9s 862 [fold5-seed42-DirectUNet] epoch 17/30  train_loss=1.1320  val_loss=1.0810  val_dice=0.0083  lr=1.36e-04
+2125.9s 863 [fold5-seed42-DirectUNet] early stopping at epoch 17 (no improvement for 6 epochs; best was epoch 11)
+2127.0s 864 [checkpoint] saved fold 5 seed 42 result -> outputs/kfold_checkpoint_direct_unet.csv
+2127.0s 865 
+2127.0s 866 ===== Fold 5/5  |  seed 43 (2/5) =====
+2129.8s 867 [fold5-seed43-DirectUNet] epoch 01/30  train_loss=1.3959  val_loss=1.8937  val_dice=0.0074  lr=3.00e-04 *
+2131.6s 868 [fold5-seed43-DirectUNet] epoch 02/30  train_loss=1.1669  val_loss=1.3712  val_dice=0.0218  lr=2.99e-04 *
+2133.3s 869 [fold5-seed43-DirectUNet] epoch 03/30  train_loss=1.1508  val_loss=1.3106  val_dice=0.0253  lr=2.97e-04 *
+2135.1s 870 [fold5-seed43-DirectUNet] epoch 04/30  train_loss=1.1486  val_loss=1.3575  val_dice=0.0234  lr=2.93e-04
+2136.8s 871 [fold5-seed43-DirectUNet] epoch 05/30  train_loss=1.1417  val_loss=1.3381  val_dice=0.0268  lr=2.87e-04 *
+2138.6s 872 [fold5-seed43-DirectUNet] epoch 06/30  train_loss=1.1397  val_loss=1.3171  val_dice=0.0291  lr=2.80e-04 *
+2140.3s 873 [fold5-seed43-DirectUNet] epoch 07/30  train_loss=1.1356  val_loss=1.2902  val_dice=0.0299  lr=2.72e-04 *
+2142.1s 874 [fold5-seed43-DirectUNet] epoch 08/30  train_loss=1.1335  val_loss=1.3215  val_dice=0.0270  lr=2.62e-04
+2143.8s 875 [fold5-seed43-DirectUNet] epoch 09/30  train_loss=1.1326  val_loss=1.3031  val_dice=0.0269  lr=2.51e-04
+2145.5s 876 [fold5-seed43-DirectUNet] epoch 10/30  train_loss=1.1337  val_loss=1.2992  val_dice=0.0282  lr=2.39e-04
+2147.2s 877 [fold5-seed43-DirectUNet] epoch 11/30  train_loss=1.1289  val_loss=1.3219  val_dice=0.0295  lr=2.26e-04
+2148.9s 878 [fold5-seed43-DirectUNet] epoch 12/30  train_loss=1.1267  val_loss=1.3486  val_dice=0.0291  lr=2.12e-04
+2150.6s 879 [fold5-seed43-DirectUNet] epoch 13/30  train_loss=1.1258  val_loss=1.3289  val_dice=0.0292  lr=1.97e-04
+2150.6s 880 [fold5-seed43-DirectUNet] early stopping at epoch 13 (no improvement for 6 epochs; best was epoch 7)
+2151.5s 881 [checkpoint] saved fold 5 seed 43 result -> outputs/kfold_checkpoint_direct_unet.csv
+2151.5s 882 
+2151.5s 883 ===== Fold 5/5  |  seed 44 (3/5) =====
+2154.0s 884 [fold5-seed44-DirectUNet] epoch 01/30  train_loss=1.4047  val_loss=1.1291  val_dice=0.0013  lr=3.00e-04 *
+2155.7s 885 [fold5-seed44-DirectUNet] epoch 02/30  train_loss=1.2098  val_loss=1.0849  val_dice=0.0015  lr=2.99e-04 *
+2157.4s 886 [fold5-seed44-DirectUNet] epoch 03/30  train_loss=1.1855  val_loss=1.0917  val_dice=0.0018  lr=2.97e-04 *
+2159.1s 887 [fold5-seed44-DirectUNet] epoch 04/30  train_loss=1.1794  val_loss=1.0617  val_dice=0.0019  lr=2.93e-04 *
+2160.8s 888 [fold5-seed44-DirectUNet] epoch 05/30  train_loss=1.1739  val_loss=1.0575  val_dice=0.0019  lr=2.87e-04 *
+2162.5s 889 [fold5-seed44-DirectUNet] epoch 06/30  train_loss=1.1668  val_loss=1.0586  val_dice=0.0019  lr=2.80e-04
+2164.1s 890 [fold5-seed44-DirectUNet] epoch 07/30  train_loss=1.1651  val_loss=1.0750  val_dice=0.0019  lr=2.72e-04
+2165.8s 891 [fold5-seed44-DirectUNet] epoch 08/30  train_loss=1.1610  val_loss=1.0826  val_dice=0.0020  lr=2.62e-04 *
+2167.4s 892 [fold5-seed44-DirectUNet] epoch 09/30  train_loss=1.1572  val_loss=1.0568  val_dice=0.0020  lr=2.51e-04
+2169.1s 893 [fold5-seed44-DirectUNet] epoch 10/30  train_loss=1.1564  val_loss=1.0841  val_dice=0.0020  lr=2.39e-04 *
+2170.8s 894 [fold5-seed44-DirectUNet] epoch 11/30  train_loss=1.1517  val_loss=1.0628  val_dice=0.0023  lr=2.26e-04 *
+2172.5s 895 [fold5-seed44-DirectUNet] epoch 12/30  train_loss=1.1488  val_loss=1.0511  val_dice=0.0028  lr=2.12e-04 *
+2174.1s 896 [fold5-seed44-DirectUNet] epoch 13/30  train_loss=1.1456  val_loss=1.0532  val_dice=0.0026  lr=1.97e-04
+2175.7s 897 [fold5-seed44-DirectUNet] epoch 14/30  train_loss=1.1414  val_loss=1.0602  val_dice=0.0027  lr=1.82e-04
+2177.4s 898 [fold5-seed44-DirectUNet] epoch 15/30  train_loss=1.1379  val_loss=1.0674  val_dice=0.0024  lr=1.67e-04
+2179.0s 899 [fold5-seed44-DirectUNet] epoch 16/30  train_loss=1.1370  val_loss=1.0507  val_dice=0.0025  lr=1.51e-04
+2180.7s 900 [fold5-seed44-DirectUNet] epoch 17/30  train_loss=1.1339  val_loss=1.0461  val_dice=0.0034  lr=1.36e-04 *
+2182.3s 901 [fold5-seed44-DirectUNet] epoch 18/30  train_loss=1.1304  val_loss=1.0477  val_dice=0.0031  lr=1.21e-04
+2184.0s 902 [fold5-seed44-DirectUNet] epoch 19/30  train_loss=1.1312  val_loss=1.0502  val_dice=0.0031  lr=1.06e-04
+2185.6s 903 [fold5-seed44-DirectUNet] epoch 20/30  train_loss=1.1252  val_loss=1.0473  val_dice=0.0034  lr=9.11e-05
+2187.3s 904 [fold5-seed44-DirectUNet] epoch 21/30  train_loss=1.1265  val_loss=1.0573  val_dice=0.0030  lr=7.73e-05
+2189.0s 905 [fold5-seed44-DirectUNet] epoch 22/30  train_loss=1.1216  val_loss=1.0477  val_dice=0.0031  lr=6.42e-05
+2190.6s 906 [fold5-seed44-DirectUNet] epoch 23/30  train_loss=1.1218  val_loss=1.0466  val_dice=0.0034  lr=5.21e-05
+2190.6s 907 [fold5-seed44-DirectUNet] early stopping at epoch 23 (no improvement for 6 epochs; best was epoch 17)
+2191.5s 908 [checkpoint] saved fold 5 seed 44 result -> outputs/kfold_checkpoint_direct_unet.csv
+2191.5s 909 
+2191.5s 910 ===== Fold 5/5  |  seed 45 (4/5) =====
+2194.0s 911 [fold5-seed45-DirectUNet] epoch 01/30  train_loss=1.3858  val_loss=1.2551  val_dice=0.0072  lr=3.00e-04 *
+2195.7s 912 [fold5-seed45-DirectUNet] epoch 02/30  train_loss=1.1831  val_loss=1.1962  val_dice=0.0095  lr=2.99e-04 *
+2197.4s 913 [fold5-seed45-DirectUNet] epoch 03/30  train_loss=1.1697  val_loss=1.1964  val_dice=0.0100  lr=2.97e-04 *
+2199.1s 914 [fold5-seed45-DirectUNet] epoch 04/30  train_loss=1.1654  val_loss=1.1874  val_dice=0.0104  lr=2.93e-04 *
+2200.8s 915 [fold5-seed45-DirectUNet] epoch 05/30  train_loss=1.1602  val_loss=1.2109  val_dice=0.0104  lr=2.87e-04
+2202.5s 916 [fold5-seed45-DirectUNet] epoch 06/30  train_loss=1.1584  val_loss=1.1689  val_dice=0.0113  lr=2.80e-04 *
+2204.2s 917 [fold5-seed45-DirectUNet] epoch 07/30  train_loss=1.1561  val_loss=1.1633  val_dice=0.0119  lr=2.72e-04 *
+2205.9s 918 [fold5-seed45-DirectUNet] epoch 08/30  train_loss=1.1558  val_loss=1.2182  val_dice=0.0096  lr=2.62e-04
+2207.5s 919 [fold5-seed45-DirectUNet] epoch 09/30  train_loss=1.1510  val_loss=1.1570  val_dice=0.0121  lr=2.51e-04 *
+2209.2s 920 [fold5-seed45-DirectUNet] epoch 10/30  train_loss=1.1501  val_loss=1.2228  val_dice=0.0102  lr=2.39e-04
+2210.9s 921 [fold5-seed45-DirectUNet] epoch 11/30  train_loss=1.1491  val_loss=1.2128  val_dice=0.0117  lr=2.26e-04
+2212.6s 922 [fold5-seed45-DirectUNet] epoch 12/30  train_loss=1.1434  val_loss=1.1809  val_dice=0.0108  lr=2.12e-04
+2214.3s 923 [fold5-seed45-DirectUNet] epoch 13/30  train_loss=1.1388  val_loss=1.1569  val_dice=0.0137  lr=1.97e-04 *
+2216.0s 924 [fold5-seed45-DirectUNet] epoch 14/30  train_loss=1.1357  val_loss=1.2450  val_dice=0.0122  lr=1.82e-04
+2217.7s 925 [fold5-seed45-DirectUNet] epoch 15/30  train_loss=1.1327  val_loss=1.1661  val_dice=0.0126  lr=1.67e-04
+2219.4s 926 [fold5-seed45-DirectUNet] epoch 16/30  train_loss=1.1312  val_loss=1.1803  val_dice=0.0149  lr=1.51e-04 *
+2221.0s 927 [fold5-seed45-DirectUNet] epoch 17/30  train_loss=1.1273  val_loss=1.2023  val_dice=0.0156  lr=1.36e-04 *
+2222.8s 928 [fold5-seed45-DirectUNet] epoch 18/30  train_loss=1.1287  val_loss=1.1764  val_dice=0.0144  lr=1.21e-04
+2224.4s 929 [fold5-seed45-DirectUNet] epoch 19/30  train_loss=1.1254  val_loss=1.1597  val_dice=0.0159  lr=1.06e-04 *
+2226.1s 930 [fold5-seed45-DirectUNet] epoch 20/30  train_loss=1.1207  val_loss=1.1499  val_dice=0.0147  lr=9.11e-05
+2227.8s 931 [fold5-seed45-DirectUNet] epoch 21/30  train_loss=1.1177  val_loss=1.1923  val_dice=0.0142  lr=7.73e-05
+2229.5s 932 [fold5-seed45-DirectUNet] epoch 22/30  train_loss=1.1191  val_loss=1.1617  val_dice=0.0148  lr=6.42e-05
+2231.2s 933 [fold5-seed45-DirectUNet] epoch 23/30  train_loss=1.1164  val_loss=1.1694  val_dice=0.0154  lr=5.21e-05
+2232.9s 934 [fold5-seed45-DirectUNet] epoch 24/30  train_loss=1.1168  val_loss=1.1716  val_dice=0.0168  lr=4.11e-05 *
+2234.6s 935 [fold5-seed45-DirectUNet] epoch 25/30  train_loss=1.1146  val_loss=1.1903  val_dice=0.0153  lr=3.14e-05
+2236.3s 936 [fold5-seed45-DirectUNet] epoch 26/30  train_loss=1.1117  val_loss=1.1854  val_dice=0.0161  lr=2.29e-05
+2238.0s 937 [fold5-seed45-DirectUNet] epoch 27/30  train_loss=1.1118  val_loss=1.1776  val_dice=0.0155  lr=1.58e-05
+2239.7s 938 [fold5-seed45-DirectUNet] epoch 28/30  train_loss=1.1113  val_loss=1.1909  val_dice=0.0158  lr=1.03e-05
+2241.3s 939 [fold5-seed45-DirectUNet] epoch 29/30  train_loss=1.1108  val_loss=1.1835  val_dice=0.0157  lr=6.25e-06
+2243.0s 940 [fold5-seed45-DirectUNet] epoch 30/30  train_loss=1.1088  val_loss=1.1876  val_dice=0.0156  lr=3.81e-06
+2243.0s 941 [fold5-seed45-DirectUNet] early stopping at epoch 30 (no improvement for 6 epochs; best was epoch 24)
+2243.8s 942 [checkpoint] saved fold 5 seed 45 result -> outputs/kfold_checkpoint_direct_unet.csv
+2243.8s 943 
+2243.8s 944 ===== Fold 5/5  |  seed 46 (5/5) =====
+2246.3s 945 [fold5-seed46-DirectUNet] epoch 01/30  train_loss=1.3381  val_loss=1.2378  val_dice=0.0117  lr=3.00e-04 *
+2248.0s 946 [fold5-seed46-DirectUNet] epoch 02/30  train_loss=1.1727  val_loss=1.1777  val_dice=0.0161  lr=2.99e-04 *
+2249.7s 947 [fold5-seed46-DirectUNet] epoch 03/30  train_loss=1.1625  val_loss=1.2434  val_dice=0.0150  lr=2.97e-04
+2251.3s 948 [fold5-seed46-DirectUNet] epoch 04/30  train_loss=1.1561  val_loss=1.4086  val_dice=0.0107  lr=2.93e-04
+2253.0s 949 [fold5-seed46-DirectUNet] epoch 05/30  train_loss=1.1567  val_loss=1.5079  val_dice=0.0089  lr=2.87e-04
+2254.6s 950 [fold5-seed46-DirectUNet] epoch 06/30  train_loss=1.1542  val_loss=1.1586  val_dice=0.0174  lr=2.80e-04 *
+2256.3s 951 [fold5-seed46-DirectUNet] epoch 07/30  train_loss=1.1523  val_loss=1.1580  val_dice=0.0185  lr=2.72e-04 *
+2258.0s 952 [fold5-seed46-DirectUNet] epoch 08/30  train_loss=1.1492  val_loss=1.1589  val_dice=0.0192  lr=2.62e-04 *
+2259.7s 953 [fold5-seed46-DirectUNet] epoch 09/30  train_loss=1.1489  val_loss=1.2418  val_dice=0.0162  lr=2.51e-04
+2261.3s 954 [fold5-seed46-DirectUNet] epoch 10/30  train_loss=1.1422  val_loss=1.1571  val_dice=0.0178  lr=2.39e-04
+2263.0s 955 [fold5-seed46-DirectUNet] epoch 11/30  train_loss=1.1428  val_loss=1.2053  val_dice=0.0192  lr=2.26e-04 *
+2264.7s 956 [fold5-seed46-DirectUNet] epoch 12/30  train_loss=1.1413  val_loss=1.1831  val_dice=0.0188  lr=2.12e-04
+2266.4s 957 [fold5-seed46-DirectUNet] epoch 13/30  train_loss=1.1416  val_loss=1.2195  val_dice=0.0178  lr=1.97e-04
+2268.0s 958 [fold5-seed46-DirectUNet] epoch 14/30  train_loss=1.1396  val_loss=1.1781  val_dice=0.0198  lr=1.82e-04 *
+2269.7s 959 [fold5-seed46-DirectUNet] epoch 15/30  train_loss=1.1354  val_loss=1.1650  val_dice=0.0199  lr=1.67e-04 *
+2271.4s 960 [fold5-seed46-DirectUNet] epoch 16/30  train_loss=1.1326  val_loss=1.1876  val_dice=0.0218  lr=1.51e-04 *
+2273.1s 961 [fold5-seed46-DirectUNet] epoch 17/30  train_loss=1.1331  val_loss=1.1731  val_dice=0.0216  lr=1.36e-04
+2274.7s 962 [fold5-seed46-DirectUNet] epoch 18/30  train_loss=1.1283  val_loss=1.1882  val_dice=0.0222  lr=1.21e-04 *
+2276.4s 963 [fold5-seed46-DirectUNet] epoch 19/30  train_loss=1.1321  val_loss=1.1801  val_dice=0.0234  lr=1.06e-04 *
+2278.1s 964 [fold5-seed46-DirectUNet] epoch 20/30  train_loss=1.1271  val_loss=1.1919  val_dice=0.0222  lr=9.11e-05
+2279.8s 965 [fold5-seed46-DirectUNet] epoch 21/30  train_loss=1.1240  val_loss=1.1672  val_dice=0.0241  lr=7.73e-05 *
+2281.5s 966 [fold5-seed46-DirectUNet] epoch 22/30  train_loss=1.1204  val_loss=1.1546  val_dice=0.0236  lr=6.42e-05
+2283.2s 967 [fold5-seed46-DirectUNet] epoch 23/30  train_loss=1.1231  val_loss=1.1945  val_dice=0.0241  lr=5.21e-05 *
+2284.8s 968 [fold5-seed46-DirectUNet] epoch 24/30  train_loss=1.1201  val_loss=1.1925  val_dice=0.0258  lr=4.11e-05 *
+2286.5s 969 [fold5-seed46-DirectUNet] epoch 25/30  train_loss=1.1188  val_loss=1.1811  val_dice=0.0261  lr=3.14e-05 *
+2288.1s 970 [fold5-seed46-DirectUNet] epoch 26/30  train_loss=1.1188  val_loss=1.1919  val_dice=0.0265  lr=2.29e-05 *
+2289.8s 971 [fold5-seed46-DirectUNet] epoch 27/30  train_loss=1.1166  val_loss=1.1897  val_dice=0.0269  lr=1.58e-05 *
+2291.5s 972 [fold5-seed46-DirectUNet] epoch 28/30  train_loss=1.1192  val_loss=1.1849  val_dice=0.0269  lr=1.03e-05
+2293.2s 973 [fold5-seed46-DirectUNet] epoch 29/30  train_loss=1.1161  val_loss=1.1822  val_dice=0.0269  lr=6.25e-06 *
+2294.8s 974 [fold5-seed46-DirectUNet] epoch 30/30  train_loss=1.1165  val_loss=1.1834  val_dice=0.0271  lr=3.81e-06 *
+2295.7s 975 [checkpoint] saved fold 5 seed 46 result -> outputs/kfold_checkpoint_direct_unet.csv
+2295.7s 976 
+2295.7s 977 Per-fold-per-seed results:
+2295.7s 978 model  fold  seed  psnr_mean  ssim_mean  dice_mean
+2295.7s 979 0   DirectUNetBaseline     1    42  24.374072   0.593596   0.245065
+2295.7s 980 1   DirectUNetBaseline     1    43  25.271104   0.780522   0.300017
+2295.7s 981 2   DirectUNetBaseline     1    44  25.305840   0.774509   0.375627
+2295.7s 982 3   DirectUNetBaseline     1    45  26.003947   0.826456   0.344609
+2295.7s 983 4   DirectUNetBaseline     1    46  25.207029   0.851607   0.308364
+2295.7s 984 5   DirectUNetBaseline     2    42  26.680803   0.803359   0.410859
+2295.7s 985 6   DirectUNetBaseline     2    43  26.473280   0.819586   0.374154
+2295.7s 986 7   DirectUNetBaseline     2    44  27.022019   0.840740   0.434964
+2295.7s 987 8   DirectUNetBaseline     2    45  26.411307   0.721328   0.391348
+2295.7s 988 9   DirectUNetBaseline     2    46  26.416550   0.850694   0.450180
+2295.7s 989 10  DirectUNetBaseline     3    42  23.818098   0.825674   0.261273
+2295.7s 990 11  DirectUNetBaseline     3    43  23.636272   0.838867   0.275648
+2295.7s 991 12  DirectUNetBaseline     3    44  21.633690   0.603415   0.291759
+2295.7s 992 13  DirectUNetBaseline     3    45  23.579320   0.772918   0.224762
+2295.7s 993 14  DirectUNetBaseline     3    46  23.610778   0.769329   0.195706
+2295.7s 994 15  DirectUNetBaseline     4    42  26.821280   0.780889   0.465530
+2295.7s 995 16  DirectUNetBaseline     4    43  25.004070   0.761074   0.658679
+2295.7s 996 17  DirectUNetBaseline     4    44  26.463850   0.774403   0.249218
+2295.7s 997 18  DirectUNetBaseline     4    45  26.648873   0.782385   0.529663
+2295.7s 998 19  DirectUNetBaseline     4    46  26.109071   0.819063   0.604414
+2295.7s 999 20  DirectUNetBaseline     5    42  26.987122   0.750574   0.338510
+2295.7s 1000 21  DirectUNetBaseline     5    43  26.583453   0.839172   0.233932
+2295.7s 1001 22  DirectUNetBaseline     5    44  27.156000   0.769145   0.368315
+2295.7s 1002 23  DirectUNetBaseline     5    45  27.568452   0.829524   0.309669
+2295.7s 1003 24  DirectUNetBaseline     5    46  27.034025   0.883121   0.305005
+2295.7s 1004 
+2295.7s 1005 Across-fold x seed summary (patient-level, mean +/- std, k=5 folds x 5 seeds = 25 runs):
+2295.7s 1006 psnr_mean           ssim_mean           dice_mean  \
+2295.7s 1007 mean       std      mean       std      mean
+2295.7s 1008 model
+2295.7s 1009 DirectUNetBaseline  25.672812  1.488281  0.786478  0.068205  0.357891
+2295.7s 1010 
+2295.7s 1011 
+2295.7s 1012 std
+2295.7s 1013 model
+2295.7s 1014 DirectUNetBaseline  0.116778
+2295.8s 1015 ==============================================================================
+2295.8s 1016 COMPARISON TABLE -- Multi-seed (primary split, 5 seeds)
+2295.8s 1017 ==============================================================================
+2295.8s 1018 psnr             ssim             dice
+2295.8s 1019 model
+2295.8s 1020 Baseline                  26.950 +/- 0.190  0.864 +/- 0.039  0.274 +/- 0.025
+2295.8s 1021 SCL-Latent                27.130 +/- 0.170  0.831 +/- 0.041  0.255 +/- 0.037
+2295.8s 1022 DirectUNetBaseline (NEW)  26.253 +/- 1.274  0.803 +/- 0.125  0.259 +/- 0.016
+2295.8s 1023 
+2295.8s 1024 ==============================================================================
+2295.8s 1025 COMPARISON TABLE -- k-fold x multi-seed (25 runs)
+2295.8s 1026 ==============================================================================
+2295.8s 1027 psnr             ssim             dice
+2295.8s 1028 model
+2295.8s 1029 Baseline                  22.750 +/- 3.160  0.639 +/- 0.169  0.337 +/- 0.129
+2295.8s 1030 SCL-Latent                23.990 +/- 3.420  0.662 +/- 0.184  0.355 +/- 0.106
+2295.8s 1031 CurvatureDynamics         22.070 +/- 4.370  0.688 +/- 0.155  0.321 +/- 0.109
+2295.8s 1032 DirectUNetBaseline (NEW)  25.673 +/- 1.488  0.786 +/- 0.068  0.358 +/- 0.117
+2295.9s 1033 
+2295.9s 1034 Dice mean: DirectUNetBaseline = 0.358 vs SCL-Latent = 0.355  -->  HIGHER (better) by 0.003
+2295.9s 1035 PSNR mean: DirectUNetBaseline = 25.673 vs SCL-Latent = 23.990  -->  HIGHER (better) by 1.683
+2295.9s 1036 SSIM mean: DirectUNetBaseline = 0.786 vs SCL-Latent = 0.662  -->  HIGHER (better) by 0.124
+2295.9s 1037 
+2295.9s 1038 Dice std (LOWER is more stable): DirectUNetBaseline = 0.117 vs SCL-Latent = 0.106  -->  LOWER (worse) by 0.011
+2295.9s 1039 
+2301.2s 1040 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2301.2s 1041 cells[i][c] = re.sub('\\\\\|', '|', cell)
+2301.4s 1042 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2301.4s 1043 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2302.0s 1044 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2302.4s 1045 [NbConvertApp] Writing 168436 bytes to __notebook__.ipynb
+2304.7s 1046 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2305.7s 1047 [NbConvertApp] Writing 609373 bytes to __results__.html
