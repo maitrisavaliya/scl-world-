@@ -17,14 +17,12 @@ execution logs for all reported runs.
 |---|---|
 | `prl-world-scl.ipynb` | Main notebook. Defines the SCL flow module, the four world-model variants (Baseline, SCL-Latent, CurvatureDynamics, and the two exploratory variants SCL-Input / SCL-Learnable), the training loop, the primary-split experiment, the 5-seed multi-seed sweep, and the 5-fold × 5-seed cross-validated sweep. |
 | `prl-world-scl.log` | Raw stdout/execution log from running `prl-world-scl.ipynb` end to end, including per-run PSNR/SSIM/Dice for every (fold, seed) combination, the hyperparameter grid search, and timing. |
-| `direct-unet-baseline.ipynb` | Comparator notebook. Trains **DirectUNet**, the plain image-to-image forecaster with no latent-dynamics module, through the identical data pipeline, patient split, seed list, and fold membership as the models above. |
-| `direct-unet-baseline.log` | Raw execution log for the DirectUNet notebook (primary split, 5-seed sweep, and 5-fold × 5-seed sweep). |
+| `prl-world-scl-rev.ipynb` | Comparator notebook. Trains **DirectUNet**, the plain image-to-image forecaster with no latent-dynamics module, through the identical data pipeline, patient split, seed list, and fold membership as the models above. |
+| `prl-world-scl-rev.log` | Raw execution log for the DirectUNet notebook (primary split, 5-seed sweep, and 5-fold × 5-seed sweep). |
 | `README.md` | This file. |
 
 Per-run results (PSNR / SSIM / Dice for all 100 trainings: 4 models × 5 folds
-× 5 seeds) are recoverable in full from the two `.log` files; a parsed CSV
-(`kfold_all.csv`) is included for convenience and can be regenerated from the
-logs at any time (see below).
+× 5 seeds) are recoverable in full from the two `.log` files.
 
 ## Environment
 
@@ -108,11 +106,11 @@ reproduce results within a small numerical tolerance.
 |---|---|
 | Sec. 4, discrete SCL operator (`u`, `R[u]`, five-point stencil) | `prl-world-scl.ipynb`, "SCL Flow" class definition |
 | Sec. 5, WorldModelBase / SCL-Latent / CurvatureDynamics / SCL-Input / SCL-Learnable | `prl-world-scl.ipynb`, model class definitions |
-| Sec. 5, DirectUNet | `direct-unet-baseline.ipynb`, model class definition |
+| Sec. 5, DirectUNet | `prl-world-scl-rev.ipynb`, model class definition |
 | Sec. 6, hyperparameter grid search (λ, α) | `prl-world-scl.ipynb`, grid-search cell (AUC-based selection) |
 | Sec. 6, primary split / multi-seed / k-fold protocols | both notebooks, correspondingly labelled cells |
 | Table 1 (discrete-operator diagnostics, K sweep) | reconstructed from the standalone flow analysis described in the paper; not part of the training notebooks (uses synthetic latent-shaped probes, not trained-encoder outputs — see manuscript Limitations) |
-| Tables 2–5 (k-fold, variance decomposition, multi-seed, ablation) | parsed from `prl-world-scl.log` and `direct-unet-baseline.log` as described above |
+| Tables 2–5 (k-fold, variance decomposition, multi-seed, ablation) | parsed from `prl-world-scl.log` and `prl-world-scl-rev.log` as described above |
 
 ## Known limitations of this release
 
@@ -147,7 +145,7 @@ acceptance):
 
 ## License
 
-Code: MIT License (or your preferred choice — update before publishing).
+Code: MIT License 
 Note that the dataset itself is subject to its own Kaggle license and is not
 included here.
 
