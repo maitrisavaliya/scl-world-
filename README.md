@@ -54,7 +54,7 @@ the top of each notebook if running elsewhere.
    - the 5-seed multi-seed sweep on the primary split;
    - the 5-fold × 5-seed cross-validated sweep (25 runs) for Baseline,
      SCL-Latent, and CurvatureDynamics.
-3. Run `direct-unet-baseline.ipynb` top to bottom to reproduce the DirectUNet
+3. Run `prl-world-scl-rev.ipynb` top to bottom to reproduce the DirectUNet
    comparator under the same three protocols.
 
 Both notebooks use the same fold-construction call,
